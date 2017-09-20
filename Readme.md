@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Димар Исхаков](https://up.htmlacademy.ru/adaptive/12/user/271245).
-* Наставник: без наставника.
+* Наставник: наставника нет.
 
 ---
 
