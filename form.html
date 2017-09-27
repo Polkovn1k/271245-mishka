@@ -21,27 +21,27 @@
         <li class="header__nav-item"><a href="#">Поиск по сайту</a></li>
         <li class="header__nav-item"><a href="#">Корзина: пока пуста</a></li>
       </ul>
-      <div class="header__nav-tog">
-        <a class="header__tog-open">Открыть меню</a>
-        <a class="header__tog-close">Закрыть меню</a>
+      <div class="header__nav-toggle">
+        <a class="header__toggle header__toggle--open">Открыть меню</a>
+        <a class="header__toggle header__toggle--close">Закрыть меню</a>
       </div>
     </nav>
   </header>
 
   <main class="main">
-    <div class="main__order">
-      <h1 class="main__order-title">Вязание на заказ</h1>
-      <p class="main__order-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <div class="order">
+      <h1 class="page-title">Вязание на заказ</h1>
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
-    <form action="https://echo.htmlacademy.ru/" class="form">
+    <form action="https://echo.htmlacademy.ru/" method="post" class="form">
       <div class="form__container">
         <fieldset class="form__type">
           <legend class="form__type-title">ТИП</legend>
           <div class="form__type-container">
-            <input type="radio" name="type" id="form__type-1" class="form__type-input form__type-input--1" checked>
-            <input type="radio" name="type" id="form__type-2" class="form__type-input form__type-input--2">
-            <label for="form__type-1" class="form__type-label form__type-label--1">Аксессуар для интерьера</label>
-            <label for="form__type-2" class="form__type-label form__type-label--2">Детская игрушка</label>
+            <input type="radio" name="type" id="form__type-1" class="form__type-input" checked>
+            <input type="radio" name="type" id="form__type-2" class="form__type-input">
+            <label for="form__type-1" class="form__type-label">Аксессуар для интерьера</label>
+            <label for="form__type-2" class="form__type-label">Детская игрушка</label>
           </div>
         </fieldset>
       </div>
@@ -49,18 +49,18 @@
         <fieldset class="form__color">
           <legend class="form__color-title">ЦВЕТ</legend>
           <div class="form__color-container">
-            <input type="checkbox" name="white" id="form__color-1" class="form__color-input form__color-input--1" checked>
-            <input type="checkbox" name="grey" id="form__color-2" class="form__color-input form__color-input--2" checked>
-            <input type="checkbox" name="tiffany" id="form__color-3" class="form__color-input form__color-input--3">
-            <input type="checkbox" name="black" id="form__color-4" class="form__color-input form__color-input--4">
-            <input type="checkbox" name="pink" id="form__color-5" class="form__color-input form__color-input--5">
-            <input type="checkbox" name="orange" id="form__color-6" class="form__color-input form__color-input--6">
-            <label for="form__color-1" class="form__color-label form__color-label--1">Белый</label>
-            <label for="form__color-2" class="form__color-label form__color-label--2">Серый</label>
-            <label for="form__color-3" class="form__color-label form__color-label--3">&#171;Тиффани&#187;</label>
-            <label for="form__color-4" class="form__color-label form__color-label--4">Черный</label>
-            <label for="form__color-5" class="form__color-label form__color-label--5">Розовый</label>
-            <label for="form__color-6" class="form__color-label form__color-label--6">Оранжевый</label>
+            <input type="checkbox" name="white" id="form__color-1" class="form__color-input" checked>
+            <input type="checkbox" name="grey" id="form__color-2" class="form__color-input" checked>
+            <input type="checkbox" name="tiffany" id="form__color-3" class="form__color-input">
+            <input type="checkbox" name="black" id="form__color-4" class="form__color-input">
+            <input type="checkbox" name="pink" id="form__color-5" class="form__color-input">
+            <input type="checkbox" name="orange" id="form__color-6" class="form__color-input">
+            <label for="form__color-1" class="form__color-label">Белый</label>
+            <label for="form__color-2" class="form__color-label">Серый</label>
+            <label for="form__color-3" class="form__color-label">&#171;Тиффани&#187;</label>
+            <label for="form__color-4" class="form__color-label">Черный</label>
+            <label for="form__color-5" class="form__color-label">Розовый</label>
+            <label for="form__color-6" class="form__color-label">Оранжевый</label>
           </div>
         </fieldset>
       </div>
