@@ -2,17 +2,13 @@
   display: block;
   padding-top: 15px;
   padding-bottom: 13px;
-
-
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
   font-size: 17px;
-  color: #444444;
-
-  border: 2px solid #828282;
+  color: $grey-color;
+  border: 2px solid $btn-bg;
   outline: none;
   background: transparent;
 }
@@ -21,6 +17,5 @@
   width: 260px;
   margin: 0 auto;
   order: 5;
-
   letter-spacing: 0.7px;
 }

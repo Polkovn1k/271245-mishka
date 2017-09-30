@@ -3,24 +3,20 @@
 }
 
 .view__container {
-  width: 320px;
-  margin: 0 auto;
+  @include mobal-container();
+  padding: 0px;
   padding-top: 53px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
 
-  background: #ffffff url("../../img/hero-mobile@1x.jpg") no-repeat center -18px;
+  background: $add-color url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 }
 
 .view__title {
   padding-bottom: 104px;
-  font-family: "Arial";
-  font-weight: 700;
+  @include font-bold();
   line-height: 30px;
   font-size: 27px;
   text-align: center;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.2px;
 
   span {
     display: block;
@@ -28,43 +24,33 @@
 }
 
 .view__list {
-  margin: 0px;
-  padding: 0px;
   width: 100%;
-  list-style-type: none;
+  @include ul-reset();
 }
 
 .view__item {
-  margin: 0px;
-  padding: 0px;
   width: 100%;
-
+  @include field-reset();
 
   a {
-    margin: 0px;
-    padding: 0px;
-
     display: block;
     width: 100%;
+    @include field-reset();
     padding-top: 25px;
-    padding-left: 29px;
     padding-right: 125px;
     padding-bottom: 30px;
-
-    font-family: "Open Sans";
-    font-weight: 700;
+    padding-left: 29px;
+    @include font-bold()
     line-height: 24px;
     font-size: 19px;
-
-    color: #ffffff;
-
-    background: #63d1bb;
+    color: $add-color;
+    background: $green-color;
   }
 }
 
 .view__item--darkness {
 
   a {
-    background: #56c3b2;
+    background: $green-color--dark;
   }
 }

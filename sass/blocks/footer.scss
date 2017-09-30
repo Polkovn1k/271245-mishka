@@ -1,14 +1,13 @@
 .footer {
-  background: #f1f1f1;
+  background: $footer-bg;
 }
 
 .footer__container {
-  width: 320px;
-  margin: 0 auto;
+  @include mobal-container();
   padding-top: 24px;
+  padding-right: 30px;
   padding-bottom: 22px;
   padding-left: 30px;
-  padding-right: 30px;
 }
 
 .footer__logo {
@@ -23,29 +22,25 @@
 }
 
 .footer__developers {
-  padding-top: 49px;
-  display: flex;
-  flex-direction: row;
+  @include flex-row();
   justify-content: center;
+  padding-top: 49px;
 
   span {
     display: block;
-    padding-right: 27px;
     padding-top: 4px;
-    font-family: "Open Sans";
-    font-weight: 700;
+    padding-right: 27px;
+    @include font-bold();
     line-height: 19px;
     font-size: 19px;
-    color: #000000;
+    color: $main-color;
   }
 
   a {
     display: block;
     width: 27px;
     height: 34px;
-
     font-size: 0px;
-
-    background: url("../../img/logo-htmlacademy.svg") no-repeat;
+    background: transparent url("../img/logo-htmlacademy.svg") no-repeat;
   }
 }

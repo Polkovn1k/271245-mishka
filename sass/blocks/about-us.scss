@@ -3,51 +3,39 @@
 }
 
 .about-us__container {
-  width: 320px;
-  margin: 0 auto;
+  @include mobal-container();
+  padding: 0px;
   padding-top: 69px;
-  padding-bottom: 0px;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
 }
 
 .about-us__title {
-  margin: 0px;
-  padding: 0px;
+  @include field-reset();
   padding-bottom: 26px;
-
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 30px;
   font-size: 25px;
-  color: #000000;
+  color: $main-color;
 }
 
 .about-us__list {
-  margin: 0px;
-  padding: 0px;
+  @include flex-column();
+  @include ul-reset();
   width: 100%;
-  list-style-type: none;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .about-us__item {
-  margin: 0px;
-  padding: 0px;
-  padding-top: 60px;
-  padding-bottom: 23px;
-  display: flex;
-  flex-direction: row;
+  @include flex-row();
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
-
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include field-reset();
+  padding-top: 60px;
+  padding-bottom: 23px;
+  @include font-bold();
   line-height: 20px;
   font-size: 17px;
-  color: #000000;
+  color: $main-color;
   letter-spacing: 0.1px;
 }
