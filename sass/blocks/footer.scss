@@ -1,26 +1,76 @@
 .footer {
   background: $footer-bg;
-}
 
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
 .footer__container {
   @include mobal-container();
   padding-top: 24px;
   padding-right: 30px;
   padding-bottom: 22px;
   padding-left: 30px;
-}
 
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
 .footer__logo {
   display: none;
-}
 
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: block;
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
 .footer__logo-link {
 
   img {
 
   }
-}
 
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+    display: block;
+
+    img {
+      width: 102px;
+      height: 34px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+
+    img {
+
+    }
+  }
+}
+/* -------------------------------------------------------------- */
 .footer__developers {
   @include flex-row();
   justify-content: center;
@@ -42,5 +92,27 @@
     height: 34px;
     font-size: 0px;
     background: transparent url("../img/logo-htmlacademy.svg") no-repeat;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-top: 7px;
+
+    span {
+      padding-right: 30px;
+    }
+
+    a {
+
+    }
+  }
+
+  @media (min-width: 1250px) {
+    span {
+
+    }
+
+    a {
+
+    }
   }
 }

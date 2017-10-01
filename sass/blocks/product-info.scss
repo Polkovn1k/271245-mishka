@@ -1,19 +1,18 @@
-.button {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 13px;
-  @include font-bold();
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 20px;
-  font-size: 17px;
-  color: $grey-color;
-  border: 2px solid $btn-bg;
-  outline: none;
-  background: transparent;
+.product-info {
+  display: none;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    margin-left: -384px;
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: transparent;
   }
 
   @media (min-width: 1250px) {
@@ -21,10 +20,10 @@
   }
 }
 /* -------------------------------------------------------------- */
-.button--special {
+.product-info__new {
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    width: 290px;
+    display: none;
   }
 
   @media (min-width: 1250px) {
@@ -32,15 +31,10 @@
   }
 }
 /* -------------------------------------------------------------- */
-.button--contacts {
-  width: 260px;
-  margin: 0 auto;
-  order: 5;
-  letter-spacing: 0.7px;
+.product-info__sale {
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    width: 230px;
-    letter-spacing: 0px;
+    display: none;
   }
 
   @media (min-width: 1250px) {
@@ -48,14 +42,16 @@
   }
 }
 /* -------------------------------------------------------------- */
-.button--comments {
+.product-info__delivery {
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    min-height: 10px;
-    padding-right: 40px;
-    padding-left: 36px;
-    padding-bottom: 15px;
-    order: 2;
+    margin-left: auto;
+    padding-top: 14px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+    color: #444444;
   }
 
   @media (min-width: 1250px) {
