@@ -25,7 +25,9 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 1050px;
+    padding-top: 59px;
+    padding-left: 175px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -44,7 +46,9 @@
   }
 
   @media (min-width: 1250px) {
-
+    line-height: 57px;
+    font-size: 53px;
+    letter-spacing: -0.8px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -59,7 +63,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    @include flex-row();
+    flex-wrap: wrap;
   }
 }
 /* -------------------------------------------------------------- */
@@ -86,72 +91,94 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 351px;
+    padding-top: 76px;
+    padding-bottom: 35px;
+    line-height: 22px;
+    font-size: 20px;
   }
 }
 /* -------------------------------------------------------------- */
 .about-us__item--eco {
+  background: transparent url("../img/icon-feature-flower.svg") left 9px top 6px no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     order: 1;
+    background-position: left 9px top 22px;
   }
 
   @media (min-width: 1250px) {
-
+    order: 1;
+    background-position: left 9px top 22px;
   }
 }
 /* -------------------------------------------------------------- */
 .about-us__item--style {
+  background: transparent url("../img/icon-feature-money.svg") left 1px top 7px no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     order: 3;
+    background-position: left 1px top 23px;
   }
 
   @media (min-width: 1250px) {
-
+    order: 3;
+    background-position: left 1px top 23px;
   }
 }
 /* -------------------------------------------------------------- */
 .about-us__item--like {
+  background: transparent url("../img/icon-feature-heart.svg") left 9px top 1px no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     order: 5;
+    background-position: left 8px top 27px;
   }
 
   @media (min-width: 1250px) {
-
+    order: 5;
+    background-position: left 8px top 27px;
   }
 }
 /* -------------------------------------------------------------- */
 .about-us__item--love {
+  background: transparent url("../img/icon-feature-ball.svg") left 4px top 9px no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     order: 2;
+    background-position: left 3px top 25px;
   }
 
   @media (min-width: 1250px) {
-
+    order: 2;
+    background-position: left 3px top 25px;
   }
 }
 /* -------------------------------------------------------------- */
 .about-us__item--our {
+  background: transparent url("../img/icon-feature-rocket.svg") left 0px top 10px no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     order: 4;
+    background-position: left 0px top 25px;
   }
 
   @media (min-width: 1250px) {
-
+    order: 4;
+    background-position: left 0px top 25px;
   }
 }
 /* -------------------------------------------------------------- */
 .about-us__item--present {
+  background: transparent url("../img/icon-feature-gift.svg") left 4px top 8px no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     order: 6;
+    background-position: left 3px top 24px;
   }
 
   @media (min-width: 1250px) {
-
+    order: 6;
+    background-position: left 3px top 24px;
   }
 }

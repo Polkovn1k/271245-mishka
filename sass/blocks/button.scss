@@ -28,7 +28,7 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 293px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -44,7 +44,10 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 234px;
+    margin: 0px;
+    margin-right: auto;
+    letter-spacing: 0.1px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -59,6 +62,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 175px;
+    margin-top: 9px;
+    order: 2;
   }
 }

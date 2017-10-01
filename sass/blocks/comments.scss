@@ -31,7 +31,17 @@
   }
 
   @media (min-width: 1250px) {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1050px;
+    padding-left: 175px;
+    padding-right: 0px;
+    padding-top: 126px;
+    padding-bottom: 154px;
+    background: transparent url("../img/review@1x.jpg") 0px 56px no-repeat;
   }
 }
 /* -------------------------------------------------------------- */
@@ -53,7 +63,11 @@
   }
 
   @media (min-width: 1250px) {
-
+    padding-bottom: 49px;
+    line-height: 57px;
+    font-size: 53px;
+    letter-spacing: -0.8px;
+    order: 1;
   }
 }
 /* -------------------------------------------------------------- */
@@ -73,7 +87,11 @@
   }
 
   @media (min-width: 1250px) {
-
+    padding-bottom: 39px;
+    width: 770px;
+    line-height: 30px;
+    font-size: 17px;
+    order: 3;
   }
 }
 /* -------------------------------------------------------------- */
@@ -109,9 +127,13 @@
   }
 
   @media (min-width: 1250px) {
+    line-height: 24px;
+    font-size: 17px;
+    order: 4;
 
     a {
-
+      line-height: 30px;
+      font-size: 17px;
     }
   }
 }
@@ -127,7 +149,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 176px;
+    order: 5;
   }
 }
 /* -------------------------------------------------------------- */
@@ -145,7 +168,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    border: none;
+    background-position: 19px 15px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -158,6 +182,6 @@
   }
 
   @media (min-width: 1250px) {
-
+    background-position: 18px 11px;
   }
 }

@@ -17,7 +17,11 @@
   }
 
   @media (min-width: 1250px) {
-
+    position: static;
+    justify-content: space-between;
+    margin: 0px;
+    padding-left: 41px;
+    padding-top: 5px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -36,7 +40,7 @@
   }
 
   @media (min-width: 1250px) {
-
+    display: none;
   }
 }
 /* -------------------------------------------------------------- */
@@ -81,7 +85,7 @@
   }
 
   @media (min-width: 1250px) {
-
+    margin-right: 26px;
     a {
 
     }
@@ -96,13 +100,14 @@
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     margin-right: 26px;
+
     a {
 
     }
   }
 
   @media (min-width: 1250px) {
-
+    margin-right: 26px;
     a {
 
     }

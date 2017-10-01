@@ -28,7 +28,14 @@
   }
 
   @media (min-width: 1250px) {
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 1050px;
+    padding-left: 171px;
+    padding-top: 141px;
+    padding-bottom: 105px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -55,7 +62,14 @@
   }
 
   @media (min-width: 1250px) {
-
+    position: relative;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 49px;
+    line-height: 57px;
+    font-size: 53px;
+    letter-spacing: -0.4px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -73,7 +87,14 @@
   }
 
   @media (min-width: 1250px) {
-
+    content: "";
+    position: absolute;
+    left: -108px;
+    top: -8px;
+    display: block;
+    width: 47px;
+    height: 81px;
+    background: transparent url("../img/icon-flag.svg") no-repeat;
   }
 }
 /* -------------------------------------------------------------- */
@@ -97,7 +118,10 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 334px;
+    padding-left: 3px;
+    line-height: 30px;
+    font-size: 17px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -110,7 +134,7 @@
   }
 
   @media (min-width: 1250px) {
-
+    padding-bottom: 80px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -123,7 +147,7 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 79px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -138,7 +162,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    line-height: 29px;
+    width: 198px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -159,6 +184,8 @@
   }
 
   @media (min-width: 1250px) {
+    line-height: 30px;
+    width: 228px;
 
     span {
 
@@ -193,9 +220,16 @@
   }
 
   @media (min-width: 1250px) {
+    position: absolute;
+    top: 71px;
+    right: 1px;
+    width: 525px;
+    min-height: 457px;
 
     img {
-
+      max-width: none;
+      width: 525px;
+      height: 457px;
     }
   }
 }
