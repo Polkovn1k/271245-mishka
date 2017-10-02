@@ -12,7 +12,13 @@
   background: #f1f1f1;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-top: 54px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 43px;
 
+    background: #f1f1f1 url("../img/zigzag-fill-desktop.png") left 0px bottom -16px repeat-x;
   }
 
   @media (min-width: 1250px) {

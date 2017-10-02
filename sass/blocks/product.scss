@@ -1,8 +1,41 @@
 .product {
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 0px;
+    width: 668px;
+    padding-bottom: 54px;
+  }
 
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.product--first {
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-top: 83px;
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.product--last {
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-bottom: 52px;
   }
 
   @media (min-width: 1250px) {
@@ -22,8 +55,12 @@
   inset 0px 1px rgba(68, 68, 68, 0.1),
   inset -1px 0px rgba(68, 68, 68, 0.1),
   inset 1px 0px rgba(68, 68, 68, 0.1);
+  order: 2;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 334px;
+    margin: 0px;
+    padding: 0px;
 
   }
 
@@ -54,15 +91,25 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 295px;
 
+    a {
+      line-height: 24px;
+      font-size: 20px;
+    }
   }
 
   @media (min-width: 1250px) {
 
+    a {
+
+    }
   }
 }
 /* -------------------------------------------------------------- */
 .product__visual {
+  width: 260px;
+  margin: 0px auto;
   order: 1;
   box-shadow: 0px 1px rgba(68, 68, 68, 0.1);
 
@@ -73,8 +120,13 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    width: 334px;
+    margin: 0px;
+    padding: 0px;
     img {
+      max-width: none;
+      width: 334px;
+      height: 334px;
 
     }
   }
@@ -99,7 +151,8 @@
   color: #444444;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    line-height: 30px;
+    font-size: 15px;
   }
 
   @media (min-width: 1250px) {
@@ -131,11 +184,18 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    margin-top: auto;
 
+    a {
+      background-position: 1px 1px;
+    }
   }
 
   @media (min-width: 1250px) {
 
+    a {
+
+    }
   }
 }
 /* -------------------------------------------------------------- */
@@ -167,7 +227,9 @@
   color: #000000;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    line-height: 24px;
+    font-size: 17px;
+    padding-left: 5px;
   }
 
   @media (min-width: 1250px) {

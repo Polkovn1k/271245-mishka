@@ -3,7 +3,8 @@
   padding-bottom: 58px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    padding-top: 0px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: 1250px) {
@@ -22,7 +23,12 @@
   inset 1px 0px rgba(68, 68, 68, 0.1);
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 46px;
   }
 
   @media (min-width: 1250px) {
@@ -43,7 +49,11 @@
   letter-spacing: 0.2px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    line-height: 24px;
+    font-size: 20px;
+    padding-left: 106px;
+    padding-bottom: 31px;
+    order: 2;
   }
 
   @media (min-width: 1250px) {
@@ -60,9 +70,12 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    order: 1;
+    padding-bottom: 12px;
 
     img {
-
+      width: 668px;
+      height: 455px;
     }
   }
 
@@ -85,8 +98,8 @@
   background: transparent url("../img/icon-play.svg") no-repeat;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
-
+    top: 190px;
+    left: 284px;
   }
 
   @media (min-width: 1250px) {
@@ -107,22 +120,15 @@
   font-size: 13px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    line-height: 30px;
+    font-size: 15px;
+    padding-left: 41px;
+    padding-right: 45px;
+    padding-bottom: 36px;
+    order: 3;
   }
 
   @media (min-width: 1250px) {
 
   }
 }
-/* -------------------------------------------------------------- */
-.product__price {
-
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
-  }
-
-  @media (min-width: 1250px) {
-
-  }
-}
-/* -------------------------------------------------------------- */
