@@ -22,7 +22,15 @@
   }
 
   @media (min-width: 1250px) {
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 103px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 57px;
+    font-size: 53px;
 
+    background: #f1f1f1 url("../img/zigzag-fill-desktop-2.png") left 0px bottom -16px repeat-x;
   }
 }
 /* -------------------------------------------------------------- */

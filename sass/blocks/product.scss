@@ -15,7 +15,9 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 315px;
+    margin: 0px;
+    padding-top: 127px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -61,11 +63,13 @@
     width: 334px;
     margin: 0px;
     padding: 0px;
-
   }
 
   @media (min-width: 1250px) {
-
+    width: 315px;
+    min-height: 197px;
+    margin: 0px;
+    padding: 0px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -100,9 +104,14 @@
   }
 
   @media (min-width: 1250px) {
+    width: 315px;
+    padding-right: 55px;
+    padding-left: 27px;
+    padding-top: 26px;
 
     a {
-
+      line-height: 24px;
+      font-size: 20px;
     }
   }
 }
@@ -123,6 +132,7 @@
     width: 334px;
     margin: 0px;
     padding: 0px;
+
     img {
       max-width: none;
       width: 334px;
@@ -132,9 +142,14 @@
   }
 
   @media (min-width: 1250px) {
+    width: 315px;
+    margin: 0px;
+    padding: 0px;
 
     img {
-
+      max-width: none;
+      width: 315px;
+      height: 462px;
     }
   }
 }
@@ -156,7 +171,10 @@
   }
 
   @media (min-width: 1250px) {
-
+    padding-left: 26px;
+    padding-bottom: 0px;
+    line-height: 30px;
+    font-size: 15px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -192,9 +210,14 @@
   }
 
   @media (min-width: 1250px) {
+    min-height: 74px;
+    padding-bottom: 0px;
+    padding-top: 23px;
+    padding-left: 21px;
+    margin-top: auto;
 
     a {
-
+      background-position: 0px 1px;
     }
   }
 }
@@ -214,7 +237,10 @@
   }
 
   @media (min-width: 1250px) {
-
+    top: -0px;
+    left: 28px;
+    right: 28px;
+    height: 1px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -233,6 +259,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    line-height: 24px;
+    font-size: 17px;
+    padding-left: 5px;
   }
 }

@@ -8,7 +8,8 @@
   }
 
   @media (min-width: 1250px) {
-
+    padding-top: 57px;
+    padding-bottom: 105px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -32,11 +33,20 @@
   }
 
   @media (min-width: 1250px) {
-
+    width: 1250px;
+    min-height: 455px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 /* -------------------------------------------------------------- */
 .prepare__title {
+  position: relative;
   margin: 0px;
   padding: 0px;
   padding-left: 90px;
@@ -57,7 +67,35 @@
   }
 
   @media (min-width: 1250px) {
+    padding-left: 760px;
+    padding-right: 60px;
+    padding-top: 96px;
+    padding-bottom: 33px;
+    line-height: 24px;
+    font-size: 20px;
+    order: 1;
+  }
+}
+/* -------------------------------------------------------------- */
+.prepare__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 30px;
+  left: 34px;
+  background: transparent url("../img/icon-video.svg") no-repeat;
 
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    top: 19px;
+    left: 42px;
+  }
+
+  @media (min-width: 1250px) {
+    top: 42px;
+    left: auto;
+    right: 253px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -74,15 +112,23 @@
     padding-bottom: 12px;
 
     img {
+      max-width: none;
       width: 668px;
       height: 455px;
     }
   }
 
   @media (min-width: 1250px) {
+    position: absolute;
+    width: 682px;
+    min-height: 455px;
+    top: 0px;
+    left: 100px;
 
     img {
-
+      max-width: none;
+      width: 682px;
+      height: 455px;
     }
   }
 }
@@ -103,8 +149,8 @@
   }
 
   @media (min-width: 1250px) {
-
-
+    top: 190px;
+    left: 291px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -129,6 +175,10 @@
   }
 
   @media (min-width: 1250px) {
-
+    padding-left: 760px;
+    padding-bottom: 46px;
+    line-height: 30px;
+    font-size: 15px;
+    order: 2;
   }
 }
