@@ -1,4 +1,6 @@
 .prepare {
+  padding-top: 31px;
+  padding-bottom: 58px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
 
@@ -10,6 +12,14 @@
 }
 /* -------------------------------------------------------------- */
 .prepare__container {
+  width: 260px;
+  margin: 0px auto;
+  padding-bottom: 33px;
+
+  box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1),
+  inset 0px 1px rgba(68, 68, 68, 0.1),
+  inset -1px 0px rgba(68, 68, 68, 0.1),
+  inset 1px 0px rgba(68, 68, 68, 0.1);
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
 
@@ -21,6 +31,16 @@
 }
 /* -------------------------------------------------------------- */
 .prepare__title {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 90px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 17px;
+  letter-spacing: 0.2px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
 
@@ -32,6 +52,8 @@
 }
 /* -------------------------------------------------------------- */
 .prepare__visual {
+  position: relative;
+  padding-bottom: 23px;
 
   img {
 
@@ -52,7 +74,37 @@
   }
 }
 /* -------------------------------------------------------------- */
+.prepare__visual::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 36px;
+  left: 80px;
+  width: 102px;
+  height: 78px;
+  background: transparent url("../img/icon-play.svg") no-repeat;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+
+  }
+
+  @media (min-width: 1250px) {
+
+
+  }
+}
+/* -------------------------------------------------------------- */
 .prepare__text {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 34px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 13px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
 
