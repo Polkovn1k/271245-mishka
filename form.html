@@ -13,10 +13,10 @@
     <div class="header__container">
       <div class="header__logo">
         <a class="header__logo-link" href="index.html">
-          <img src="http://placehold.it/150x100" alt="Mishka logo">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Пряжа &#171;МИШКА&#187;">
         </a>
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--catalog-bg">
         <ul class="header__nav-list">
           <li class="header__nav-item header__nav-item--catalog"><a href="catalog.html">Каталог товаров</a></li>
           <li class="header__nav-item header__nav-item--form"><a>Вязание на заказ</a></li>
@@ -37,8 +37,8 @@
       <a href="#" class="product-info__sale">Распродажа</a>
       <span class="product-info__delivery">Бесплатная доставка по России</span>
     </div>
+    <h1 class="page-title">Вязание на заказ</h1>
     <div class="order">
-      <h1 class="page-title">Вязание на заказ</h1>
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
     <form action="https://echo.htmlacademy.ru/" method="post" class="form">
@@ -46,10 +46,10 @@
         <fieldset class="form__type">
           <legend class="form__type-title">ТИП</legend>
           <div class="form__type-container">
-            <input type="radio" name="type" id="form__type-1" class="form__type-input" checked>
-            <input type="radio" name="type" id="form__type-2" class="form__type-input">
-            <label for="form__type-1" class="form__type-label">Аксессуар для интерьера</label>
-            <label for="form__type-2" class="form__type-label">Детская игрушка</label>
+            <input type="radio" name="type" id="form__type-1" checked>
+            <input type="radio" name="type" id="form__type-2">
+            <label for="form__type-1" class="form__type-label form__type-label--1">Аксессуар для интерьера</label>
+            <label for="form__type-2" class="form__type-label form__type-label--2">Детская игрушка</label>
           </div>
         </fieldset>
       </div>
@@ -57,18 +57,18 @@
         <fieldset class="form__color">
           <legend class="form__color-title">ЦВЕТ</legend>
           <div class="form__color-container">
-            <input type="checkbox" name="white" id="form__color-1" class="form__color-input" checked>
-            <input type="checkbox" name="grey" id="form__color-2" class="form__color-input" checked>
-            <input type="checkbox" name="tiffany" id="form__color-3" class="form__color-input">
-            <input type="checkbox" name="black" id="form__color-4" class="form__color-input">
-            <input type="checkbox" name="pink" id="form__color-5" class="form__color-input">
-            <input type="checkbox" name="orange" id="form__color-6" class="form__color-input">
-            <label for="form__color-1" class="form__color-label">Белый</label>
-            <label for="form__color-2" class="form__color-label">Серый</label>
-            <label for="form__color-3" class="form__color-label">&#171;Тиффани&#187;</label>
-            <label for="form__color-4" class="form__color-label">Черный</label>
-            <label for="form__color-5" class="form__color-label">Розовый</label>
-            <label for="form__color-6" class="form__color-label">Оранжевый</label>
+            <input type="checkbox" name="white" id="form__color-1" checked>
+            <input type="checkbox" name="grey" id="form__color-2" checked>
+            <input type="checkbox" name="tiffany" id="form__color-3">
+            <input type="checkbox" name="black" id="form__color-4">
+            <input type="checkbox" name="pink" id="form__color-5">
+            <input type="checkbox" name="orange" id="form__color-6">
+            <label for="form__color-1" class="form__color-label form__color-label--1">Белый</label>
+            <label for="form__color-2" class="form__color-label form__color-label--2">Серый</label>
+            <label for="form__color-3" class="form__color-label form__color-label--3">&#171;Тиффани&#187;</label>
+            <label for="form__color-4" class="form__color-label form__color-label--4">Черный</label>
+            <label for="form__color-5" class="form__color-label form__color-label--5">Розовый</label>
+            <label for="form__color-6" class="form__color-label form__color-label--6">Оранжевый</label>
           </div>
         </fieldset>
       </div>
@@ -107,21 +107,23 @@
         </fieldset>
       </div>
       <span class="form__notice"><sup>*</sup>Поля обязательны для заполнения</span>
-      <button type="submit" class="button">Отправить заказ</button>
+      <button type="submit" class="button button--form">Отправить заказ</button>
     </form>
   </main>
 
   <footer class="footer">
-    <div class="footer__logo">
-      <a class="footer__logo-link" href="index.html"><img src="http://placehold.it/150x100" alt="Mishka logo"></a>
-    </div>
-    <ul class="social">
-      <li class="social__item social-item--insta"><a href="#">Мы в Инстаграме</a></li>
-      <li class="social__item social-item--facebook"><a href="#">Мы в Фэйсюуке</a></li>
-      <li class="social__item social-item--twitter"><a href="#">Мы в Твиттере</a></li>
-    </ul>
-    <div class="footer__developers">
-      <span>Разработано</span><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="footer__container">
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="index.html"><img src="../img/logo-mobile.svg" alt="Mishka logo"></a>
+      </div>
+      <ul class="social">
+        <li class="social__item social__item--insta"><a href="#">Мы в Инстаграме</a></li>
+        <li class="social__item social__item--facebook"><a href="#">Мы в Фэйсюуке</a></li>
+        <li class="social__item social__item--twitter"><a href="#">Мы в Твиттере</a></li>
+      </ul>
+      <div class="footer__developers">
+        <span>Разработано</span><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 

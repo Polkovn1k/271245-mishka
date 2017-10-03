@@ -1,0 +1,557 @@
+.form {
+  padding-bottom: 55px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__container {
+  width: 260px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__type {
+  @include field-reset();
+  padding-bottom: 20px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__type-title {
+  width: 62px;
+  margin-bottom: 34px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__type-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  input {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__type-label {
+  position: relative;
+  display: block;
+  padding-left: 64px;
+  padding-right: 10px;
+  padding-bottom: 24px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 17px;
+  color: #000000;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__type-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: 2px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+#form__type-1:checked ~ .form__type-label--1::before,
+#form__type-2:checked ~ .form__type-label--2::before {
+  background: #62d1ba;
+  box-shadow: inset 0px 0px 0px 9px #ffffff;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__color {
+  @include field-reset();
+
+  border: none;
+  border-top: 1px solid #62d1ba;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__color-title {
+  margin-bottom: 35px;
+  width: 62px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__color-container {
+
+  input {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__color-label {
+  position: relative;
+  display: block;
+  padding-left: 63px;
+  padding-right: 0px;
+  padding-bottom: 43px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 17px;
+  color: #000000;
+  letter-spacing: 0.3px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__color-label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -11px;
+  left: 1px;
+  width: 40px;
+  height: 39px;
+  border: 2px solid #444444;
+  cursor: pointer;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+#form__color-1:checked ~ .form__color-label--1::before,
+#form__color-2:checked ~ .form__color-label--2::before,
+#form__color-3:checked ~ .form__color-label--3::before,
+#form__color-4:checked ~ .form__color-label--4::before,
+#form__color-5:checked ~ .form__color-label--5::before,
+#form__color-6:checked ~ .form__color-label--6::before {
+  background: transparent url("../img/icon-tick.svg") 5px 9px no-repeat;
+  background-size: 70%;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__name {
+  @include field-reset();
+  padding-bottom: 9px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__name-title {
+  width: 62px;
+  margin-bottom: 27px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__name-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__name-label {
+  display: block;
+  padding-bottom: 22px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 17px;
+  color: #000000;
+
+  input {
+    display: block;
+    min-height: 52px;
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 17px;
+    color: #444444;
+    border: none;
+    box-shadow: inset 0px -2px #000000;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__phone {
+  @include field-reset();
+  padding-bottom: 32px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__phone-title {
+  width: 62px;
+  margin-bottom: 6px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__phone-container {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__phone-label {
+
+  input {
+    display: block;
+    min-height: 52px;
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 17px;
+    color: #444444;
+    border: none;
+    box-shadow: inset 0px -2px #000000;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__email {
+  @include field-reset();
+  padding-bottom: 32px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__email-title {
+  width: 81px;
+  margin-bottom: 6px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__email-container {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__email-label {
+
+  input {
+    display: block;
+    min-height: 52px;
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 17px;
+    color: #444444;
+    border: none;
+    box-shadow: inset 0px -2px #000000;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__addition {
+  @include field-reset();
+  padding-bottom: 12px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__addition-title {
+  width: 62px;
+  margin-bottom: 24px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__addition-container {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__addition-label {
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 13px;
+  min-height: 142px;
+  resize: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 17px;
+  color: #444444;
+  border: 2px solid #000000;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__notice {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding-bottom: 31px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  color: #444444;
+  letter-spacing: 0.1px;
+  border-color: #444444;
+
+  sup {
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+    sup {
+
+    }
+  }
+
+  @media (min-width: 1250px) {
+
+    sup {
+
+    }
+  }
+}
