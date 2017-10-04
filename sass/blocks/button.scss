@@ -92,7 +92,9 @@
   margin: 0px auto;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    width: 230px;
+    margin: 0px;
+    order: 7;
   }
 
   @media (min-width: 1250px) {

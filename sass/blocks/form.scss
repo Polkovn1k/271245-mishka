@@ -2,7 +2,12 @@
   padding-bottom: 55px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
   }
 
   @media (min-width: 1250px) {
@@ -15,7 +20,19 @@
   margin: 0 auto;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 100%;
+    margin: 0px;
+  }
 
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__container--dark {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    background: #f1f1f1;
   }
 
   @media (min-width: 1250px) {
@@ -30,7 +47,14 @@
   border-top: 1px solid #62d1ba;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: relative;
+    width: 768px;
+    margin: 0px auto;
+    padding-left: 217px;
+    padding-right: 50px;
+    padding-bottom: 11px;
+    border: none;
+    order: 1;
   }
 
   @media (min-width: 1250px) {
@@ -49,7 +73,10 @@
   color: #63d1bb;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: absolute;
+    top: 1px;
+    left: 51px;
+    margin: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -88,7 +115,13 @@
   color: #000000;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    padding-left: 81px;
+    padding-right: 0px;
+    padding-bottom: 57px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 19px;
+    font-size: 19px;
   }
 
   @media (min-width: 1250px) {
@@ -109,7 +142,10 @@
   cursor: pointer;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    top: -15px;
+    left: 0px;
+    width: 52px;
+    height: 52px;
   }
 
   @media (min-width: 1250px) {
@@ -123,7 +159,7 @@
   box-shadow: inset 0px 0px 0px 9px #ffffff;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    box-shadow: inset 0px 0px 0px 13px #ffffff;
   }
 
   @media (min-width: 1250px) {
@@ -133,12 +169,19 @@
 /* -------------------------------------------------------------- */
 .form__color {
   @include field-reset();
-
   border: none;
   border-top: 1px solid #62d1ba;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: relative;
+    width: 768px;
+    margin: 0px auto;
+    padding-top: 65px;
+    padding-bottom: 11px;
+    padding-left: 217px;
+    padding-right: 50px;
+    border: none;
+    order: 2;
   }
 
   @media (min-width: 1250px) {
@@ -157,7 +200,10 @@
   color: #63d1bb;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: absolute;
+    top: 66px;
+    left: 51px;
+    margin: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -172,7 +218,9 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media (min-width: 1250px) {
@@ -194,7 +242,28 @@
   letter-spacing: 0.3px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 262px;
+    padding-left: 80px;
+    padding-right: 0px;
+    padding-bottom: 57px;
 
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 19px;
+    font-size: 19px;
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.form__color-label:nth-child(2n) {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 230px;
+    padding-left: 80px;
+    padding-right: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -214,7 +283,10 @@
   cursor: pointer;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    top: -15px;
+    left: 0px;
+    width: 54px;
+    height: 52px;
   }
 
   @media (min-width: 1250px) {
@@ -232,7 +304,8 @@
   background-size: 70%;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    background: transparent url("../img/icon-tick.svg") 8px 12px no-repeat;
+    background-size: 73%;
   }
 
   @media (min-width: 1250px) {
@@ -247,7 +320,15 @@
   border-top: 1px solid #62d1ba;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: relative;
+    width: 768px;
+    margin: 0px auto;
+    padding-left: 217px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 26px;
+    border: none;
+    order: 3;
   }
 
   @media (min-width: 1250px) {
@@ -266,7 +347,10 @@
   color: #63d1bb;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: absolute;
+    top: 66px;
+    left: 51px;
+    margin: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -297,6 +381,10 @@
   font-size: 17px;
   color: #000000;
 
+  span {
+
+  }
+
   input {
     display: block;
     min-height: 52px;
@@ -311,7 +399,24 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 24px;
+    line-height: 19px;
+    font-size: 19px;
 
+    span {
+      padding-right: 27px;
+    }
+
+    input {
+      padding-left: 15px;
+      font-family: "Open Sans";
+      font-weight: 400;
+      line-height: 19px;
+      font-size: 19px;
+    }
   }
 
   @media (min-width: 1250px) {
@@ -326,7 +431,15 @@
   border-top: 1px solid #62d1ba;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: relative;
+    width: 768px;
+    margin: 0px auto;
+    padding-left: 217px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    border: none;
+    order: 4;
   }
 
   @media (min-width: 1250px) {
@@ -345,7 +458,10 @@
   color: #63d1bb;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: absolute;
+    top: 67px;
+    left: 52px;
+    margin: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -381,6 +497,12 @@
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
 
+    input {
+      padding-left: 17px;
+      line-height: 19px;
+      font-size: 19px;
+      background: transparent;
+    }
   }
 
   @media (min-width: 1250px) {
@@ -395,7 +517,15 @@
   border-top: 1px solid #62d1ba;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: relative;
+    width: 768px;
+    margin: 0px auto;
+    padding-left: 217px;
+    padding-right: 50px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    border: none;
+    order: 5;
   }
 
   @media (min-width: 1250px) {
@@ -414,7 +544,10 @@
   color: #63d1bb;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: absolute;
+    top: 40px;
+    left: 52px;
+    margin: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -449,7 +582,12 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    input {
+      padding-left: 17px;
+      line-height: 19px;
+      font-size: 19px;
+      background: transparent;
+    }
   }
 
   @media (min-width: 1250px) {
@@ -464,7 +602,15 @@
   border-top: 1px solid #62d1ba;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: relative;
+    width: 768px;
+    margin: 0px auto;
+    padding-left: 217px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 49px;
+    border: none;
+    order: 6;
   }
 
   @media (min-width: 1250px) {
@@ -483,7 +629,10 @@
   color: #63d1bb;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    position: absolute;
+    top: 66px;
+    left: 51px;
+    margin: 0px;
   }
 
   @media (min-width: 1250px) {
@@ -516,7 +665,8 @@
   border: 2px solid #000000;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    line-height: 19px;
+    font-size: 19px;
   }
 
   @media (min-width: 1250px) {
@@ -542,6 +692,13 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: auto;
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-left: 137px;
+    line-height: 30px;
+    font-size: 17px;
+    order: 8;
 
     sup {
 

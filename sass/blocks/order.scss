@@ -7,6 +7,9 @@
   margin: 0px auto;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
 
   }
 
@@ -16,8 +19,9 @@
 }
 /* -------------------------------------------------------------- */
 .order__text {
-  padding-top: 9px;
-  padding-bottom: 10px;
+  margin: 0px;
+  padding-top: 22px;
+  padding-bottom: 23px;
   font-family: "Open Sans";
   font-weight: 400;
   line-height: 24px;
@@ -25,7 +29,13 @@
   letter-spacing: 0.1px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
-
+    padding-top: 75px;
+    padding-bottom: 73px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 17px;
+    letter-spacing: 0px;
   }
 
   @media (min-width: 1250px) {
