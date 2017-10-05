@@ -17,13 +17,38 @@
   background: $add-color url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    position: relative;
     width: 100%;
     background: #f9f9f9;
   }
 
   @media (min-width: 1250px) {
+    position: relative;
     width: 100%;
     background: #f9f9f9;
+  }
+}
+/* -------------------------------------------------------------- */
+.view__container::after {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-height: 34px;
+    bottom: -17px;
+    background: transparent url("../img/zigzag-fill-desktop-5.png") 0px 5px repeat-x;
+  }
+
+  @media (min-width: 1250px) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-height: 34px;
+    bottom: -17px;
+    background: transparent url("../img/zigzag-fill-desktop-3.png") 0px 0px repeat-x;
   }
 }
 /* -------------------------------------------------------------- */

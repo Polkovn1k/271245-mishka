@@ -580,6 +580,7 @@
     color: #444444;
     border: none;
     box-shadow: inset 0px -2px #000000;
+    background: url("../img/icon-phone.svg") right 7px top 11px no-repeat;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
@@ -588,7 +589,7 @@
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
-      background: transparent;
+      background: transparent url("../img/icon-phone.svg") right 26px top 11px no-repeat;
     }
   }
 
@@ -598,7 +599,7 @@
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
-      background: transparent;
+      background: transparent url("../img/icon-phone.svg") right 8px top 11px no-repeat;
     }
   }
 }
@@ -684,6 +685,7 @@
     color: #444444;
     border: none;
     box-shadow: inset 0px -2px #000000;
+    background: url("../img/icon-mail.svg") right 3px top 11px no-repeat;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
@@ -692,7 +694,7 @@
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
-      background: transparent;
+      background: transparent url("../img/icon-mail.svg") right 22px top 11px no-repeat;
     }
   }
 
@@ -702,7 +704,7 @@
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
-      background: transparent;
+      background: transparent url("../img/icon-mail.svg") right 4px top 11px no-repeat;
     }
   }
 }
