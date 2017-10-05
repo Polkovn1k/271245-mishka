@@ -109,6 +109,24 @@
     </div>
   </footer>
 
+  <div class="modal">
+    <form action="https://echo.htmlacademy.ru/" method="post" class="modal__container">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <fieldset class="modal__size">
+        <legend class="modal__size-title">Выберите размер:</legend>
+        <input id="modal__size-1" type="checkbox" name="small" checked>
+        <input id="modal__size-2" type="checkbox" name="medium">
+        <input id="modal__size-3" type="checkbox" name="large">
+        <label for="modal__size-1" class="modal__size-label modal__size-label--1">S</label>
+        <label for="modal__size-2" class="modal__size-label modal__size-label--2">M</label>
+        <label for="modal__size-3" class="modal__size-label modal__size-label--3">L</label>
+      </fieldset>
+      <button type="submit" class="button button--modal">Добавить</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

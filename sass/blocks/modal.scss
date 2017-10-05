@@ -6,6 +6,19 @@
   left: 0px;
   background: rgba(255, 255, 255, 0.9);
   z-index: 20;
+  display: none;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.modal--show {
+  display: block;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
 
@@ -45,6 +58,69 @@
     margin-left: -283px;
     margin-top: -168px;
     padding-top: 33px;
+  }
+}
+/* -------------------------------------------------------------- */
+.modal__close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  font-size: 0px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    top: 10px;
+    right: 10px;
+  }
+
+  @media (min-width: 1250px) {
+    top: 10px;
+    right: 10px;
+  }
+}
+/* -------------------------------------------------------------- */
+.modal__close::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 17px;
+  left: 8px;
+  width: 20px;
+  height: 2px;
+  background: #444444;
+  transform: rotate(45deg);
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.modal__close::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 17px;
+  left: 8px;
+  width: 20px;
+  height: 2px;
+  background: #444444;
+  transform: rotate(-45deg);
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
   }
 }
 /* -------------------------------------------------------------- */
@@ -183,3 +259,4 @@
 
   }
 }
+
