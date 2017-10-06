@@ -1,0 +1,92 @@
+.product-info {
+  display: none;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    width: 384px;
+    background: transparent;
+  }
+
+  @media (min-width: 1250px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 50%;
+    margin-left: -625px;
+    width: 1250px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background: transparent;
+  }
+}
+/* -------------------------------------------------------------- */
+.product-info__new {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: none;
+  }
+
+  @media (min-width: 1250px) {
+    display: block;
+    padding-top: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 15px;
+    color: #444444;
+    letter-spacing: 0.6px;
+  }
+}
+/* -------------------------------------------------------------- */
+.product-info__sale {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: none;
+  }
+
+  @media (min-width: 1250px) {
+    display: block;
+    padding-top: 18px;
+    margin-left: 58px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 15px;
+    color: #444444;
+    letter-spacing: 0.2px;
+  }
+}
+/* -------------------------------------------------------------- */
+.product-info__delivery {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: block;
+    width: 384px;
+    padding-top: 14px;
+    padding-right: 49px;
+    text-align: right;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+    color: #444444;
+  }
+
+  @media (min-width: 1250px) {
+    margin-left: auto;
+    padding-top: 18px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+    color: #444444;
+  }
+}

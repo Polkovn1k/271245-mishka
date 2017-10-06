@@ -1,0 +1,125 @@
+.button {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  @include font-bold();
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  font-size: 17px;
+  color: $grey-color;
+  border: 2px solid $btn-bg;
+  outline: none;
+  background: transparent;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.button--special {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 290px;
+  }
+
+  @media (min-width: 1250px) {
+    width: 293px;
+  }
+}
+/* -------------------------------------------------------------- */
+.button--contacts {
+  width: 260px;
+  margin: 0 auto;
+  order: 5;
+  letter-spacing: 0.7px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 230px;
+    letter-spacing: 0px;
+  }
+
+  @media (min-width: 1250px) {
+    width: 230px;
+    margin: 0px;
+    margin-left: 275px;
+    margin-top: -91px;
+    letter-spacing: 0.1px;
+  }
+}
+/* -------------------------------------------------------------- */
+.button--comments {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    min-height: 10px;
+    padding-right: 40px;
+    padding-left: 36px;
+    padding-bottom: 15px;
+    order: 2;
+  }
+
+  @media (min-width: 1250px) {
+    width: 175px;
+    margin-top: 9px;
+    order: 2;
+  }
+}
+/* -------------------------------------------------------------- */
+.button--prepare {
+  width: 192px;
+  margin: 0px auto;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 584px;
+    order: 4;
+  }
+
+  @media (min-width: 1250px) {
+    margin-left: 762px;
+    padding-bottom: 16px;
+    width: 230px;
+    line-height: 17px;
+    font-size: 17px;
+    order: 3;
+  }
+}
+/* -------------------------------------------------------------- */
+.button--form {
+  width: 260px;
+  margin: 0px auto;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 230px;
+    margin: 0px;
+    order: 7;
+  }
+
+  @media (min-width: 1250px) {
+    width: 230px;
+    margin: 0px;
+    order: 7;
+  }
+}
+/* -------------------------------------------------------------- */
+.button--modal {
+  width: 260px;
+  margin: 0px auto;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  background: #63d1bb;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 350px;
+  }
+
+  @media (min-width: 1250px) {
+    width: 350px;
+  }
+}

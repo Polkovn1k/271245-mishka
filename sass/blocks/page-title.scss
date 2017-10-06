@@ -1,0 +1,36 @@
+.page-title {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 71px;
+  padding-bottom: 76px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 27px;
+  text-align: center;
+
+  background: #f1f1f1;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-top: 54px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 43px;
+
+    background: #f1f1f1 url("../img/zigzag-fill-desktop.png") left 0px bottom -16px repeat-x;
+  }
+
+  @media (min-width: 1250px) {
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 103px;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 57px;
+    font-size: 53px;
+
+    background: #f1f1f1 url("../img/zigzag-fill-desktop-2.png") left 0px bottom -16px repeat-x;
+  }
+}
+/* -------------------------------------------------------------- */

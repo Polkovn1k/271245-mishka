@@ -1,0 +1,190 @@
+.comments {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__container {
+  @include mobal-container()
+  padding-top: 32px;
+  padding-right: 30px;
+  padding-bottom: 51px;
+  padding-left: 30px;
+  background: transparent url("../img/zigzag-fill-desktop-7.png") bottom repeat-x;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 77px;
+    padding-bottom: 100px;
+    background: url("../img/review@1x.jpg") 0px 0px no-repeat,
+    url("../img/zigzag-fill-desktop-6.png") bottom repeat-x;
+  }
+
+  @media (min-width: 1250px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1050px;
+    padding-left: 175px;
+    padding-right: 0px;
+    padding-top: 126px;
+    padding-bottom: 154px;
+    background: url("../img/review@1x.jpg") 0px 56px no-repeat,
+    url("../img/zigzag-fill-desktop-4.png") bottom repeat-x;
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__title {
+  @include field-reset();
+  padding-bottom: 23px;
+  @include font-bold();
+  line-height: 30px;
+  font-size: 27px;
+  color: $main-color;
+  letter-spacing: -1.7px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-bottom: 49px;
+    line-height: 50px;
+    font-size: 43px;
+    letter-spacing: -0.8px;
+    order: 1;
+  }
+
+  @media (min-width: 1250px) {
+    padding-bottom: 49px;
+    line-height: 57px;
+    font-size: 53px;
+    letter-spacing: -0.8px;
+    order: 1;
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__text {
+  @include field-reset();
+  padding-bottom: 28px;
+  @include font-regular();
+  line-height: 30px;
+  font-size: 15px;
+  color: $grey-color;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-bottom: 57px;
+    line-height: 30px;
+    font-size: 17px;
+    order: 3;
+  }
+
+  @media (min-width: 1250px) {
+    padding-bottom: 39px;
+    width: 770px;
+    line-height: 30px;
+    font-size: 17px;
+    order: 3;
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__name {
+  display: block;
+  padding-bottom: 30px;
+  @include font-bold();
+  line-height: 24px;
+  font-size: 17px;
+  color: $main-color;
+  letter-spacing: 0.1px;
+
+  a {
+    display: block;
+    padding-top: 2px;
+    @include font-regular();
+    line-height: 30px;
+    font-size: 17px;
+    color: $grey-color;
+    letter-spacing: 0px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    line-height: 24px;
+    font-size: 18px;
+    order: 4;
+
+    a {
+      padding-top: 7px;
+      line-height: 24px;
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    line-height: 24px;
+    font-size: 17px;
+    order: 4;
+
+    a {
+      line-height: 30px;
+      font-size: 17px;
+    }
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__controls {
+  @include flex-row();
+  width: 100%;
+  padding-bottom: 36px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    width: 176px;
+    order: 5;
+  }
+
+  @media (min-width: 1250px) {
+    width: 176px;
+    order: 5;
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__controls-direction {
+  width: 50%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 0px;
+  border: 1px solid $controls-bg;
+  background: transparent url("../img/icon-right-arrow.svg") top 12px left 37px no-repeat;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    border: none;
+    background-position: 19px 16px;
+  }
+
+  @media (min-width: 1250px) {
+    border: none;
+    background-position: 19px 15px;
+  }
+}
+/* -------------------------------------------------------------- */
+.comments__controls-direction:first-child {
+  transform: rotate(180deg);
+  background-position: 40px 14px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    background-position: 18px 10px;
+  }
+
+  @media (min-width: 1250px) {
+    background-position: 18px 11px;
+  }
+}

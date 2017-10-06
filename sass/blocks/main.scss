@@ -1,0 +1,41 @@
+.main {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    position: relative;
+  }
+
+  @media (min-width: 1250px) {
+    position: relative;
+    box-shadow: inset 0px 1px rgba(68, 68, 68, 0.1);
+  }
+}
+/* -------------------------------------------------------------- */
+.main__catalog {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.main__catalog-container {
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+    width: 1250px;
+    margin: 0px auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+}

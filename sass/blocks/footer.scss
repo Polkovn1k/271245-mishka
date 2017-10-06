@@ -1,0 +1,130 @@
+.footer {
+  background: $footer-bg;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+
+  }
+
+  @media (min-width: 1250px) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.footer__container {
+  @include mobal-container();
+  padding-top: 24px;
+  padding-right: 30px;
+  padding-bottom: 22px;
+  padding-left: 30px;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 1250px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+}
+/* -------------------------------------------------------------- */
+.footer__logo {
+  display: none;
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: block;
+  }
+
+  @media (min-width: 1250px) {
+    display: block;
+  }
+}
+/* -------------------------------------------------------------- */
+.footer__logo-link {
+
+  img {
+
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    display: block;
+
+    img {
+      width: 102px;
+      height: 34px;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    display: block;
+
+    img {
+      width: 102px;
+      height: 34px;
+    }
+  }
+}
+/* -------------------------------------------------------------- */
+.footer__developers {
+  @include flex-row();
+  justify-content: center;
+  padding-top: 49px;
+
+  span {
+    display: block;
+    padding-top: 4px;
+    padding-right: 27px;
+    @include font-bold();
+    line-height: 19px;
+    font-size: 19px;
+    color: $main-color;
+  }
+
+  a {
+    display: block;
+    width: 27px;
+    height: 34px;
+    font-size: 0px;
+    background: transparent url("../img/logo-htmlacademy.svg") no-repeat;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+    padding-top: 7px;
+
+    span {
+      padding-right: 30px;
+    }
+
+    a {
+
+    }
+  }
+
+  @media (min-width: 1250px) {
+    padding-top: 7px;
+
+    span {
+      padding-right: 30px;
+    }
+
+    a {
+
+    }
+  }
+}
