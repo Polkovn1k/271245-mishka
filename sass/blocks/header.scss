@@ -64,6 +64,8 @@
   img {
     display: block;
     @include field-reset();
+    width: 86px;
+    height: 35px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
@@ -282,6 +284,7 @@
 
   a {
     background: transparent url("../img/icon-search.svg") no-repeat top 32px left 32px;
+    background-size: 18px 19px;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
@@ -293,6 +296,7 @@
       margin-top: -88px;
       font-size: 0px;
       background: transparent url("../img/icon-search.svg") no-repeat top 36px left 33px;
+      background-size: 18px 19px;
       box-shadow: -1px 0px rgba(68, 68, 68, 0.1),
       inset -1px 0px rgba(68, 68, 68, 0.1);
     }
@@ -304,9 +308,8 @@
     a{
       font-size: 0px;
       width: 84px;
-
-
       background: transparent url("../img/icon-search.svg") no-repeat top 36px left 33px;
+      background-size: 18px 19px;
       box-shadow: inset 1px 0px rgba(68, 68, 68, 0.1),
       inset -1px 0px rgba(68, 68, 68, 0.1);
     }
@@ -317,6 +320,7 @@
 
   a {
     background: transparent url("../img/icon-cart.svg") no-repeat top 31px left 31px;
+    background-size: 21px 18px;
     box-shadow: inset 0px 1px 0px 0px #ececec,
     inset 0px -1px 0px 0px #ececec;
   }
@@ -336,6 +340,7 @@
       font-size: 17px;
       color: #000000;
       background: transparent url("../img/icon-cart.svg") no-repeat top 34px left 32px;
+      background-size: 21px 18px;
       box-shadow: none;
     }
   }
@@ -351,6 +356,7 @@
       font-size: 17px;
       color: #000000;
       background: transparent url("../img/icon-cart.svg") no-repeat top 34px left 32px;
+      background-size: 21px 18px;
       box-shadow: none;
     }
   }

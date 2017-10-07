@@ -15,8 +15,9 @@
   padding-right: 30px;
   padding-bottom: 51px;
   padding-left: 30px;
-  background: transparent url("../img/zigzag-fill-desktop-7.png") bottom repeat-x;
-
+  background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+  background-size: 350px auto, 768px 17px;
+  //---------------------
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     display: flex;
     flex-direction: row;
@@ -29,9 +30,16 @@
     padding-top: 77px;
     padding-bottom: 100px;
     background: url("../img/review@1x.jpg") 0px 0px no-repeat,
-    url("../img/zigzag-fill-desktop-6.png") bottom repeat-x;
-  }
+                url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background-size: 350px auto, 768px 17px;
 
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/review@2x.jpg") 0px 0px no-repeat,
+                  url("../img/bg-zigzag-line.svg") bottom repeat-x;
+      background-size: 350px auto, 768px 17px;
+    }
+  }
+  //---------------------
   @media (min-width: 1250px) {
     display: flex;
     flex-direction: row;
@@ -44,7 +52,14 @@
     padding-top: 126px;
     padding-bottom: 154px;
     background: url("../img/review@1x.jpg") 0px 56px no-repeat,
-    url("../img/zigzag-fill-desktop-4.png") bottom repeat-x;
+                url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background-size: 350px auto, 1050px 23px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/review@2x.jpg") 0px 56px no-repeat,
+                  url("../img/bg-zigzag-line.svg") bottom repeat-x;
+      background-size: 350px auto, 1050px 23px;
+    }
   }
 }
 /* -------------------------------------------------------------- */
@@ -164,15 +179,18 @@
   font-size: 0px;
   border: 1px solid $controls-bg;
   background: transparent url("../img/icon-right-arrow.svg") top 12px left 37px no-repeat;
+  background-size: 51px 26px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     border: none;
     background-position: 19px 16px;
+    background-size: 51px 26px;
   }
 
   @media (min-width: 1250px) {
     border: none;
     background-position: 19px 15px;
+    background-size: 51px 26px;
   }
 }
 /* -------------------------------------------------------------- */

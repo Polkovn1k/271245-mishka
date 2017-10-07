@@ -16,7 +16,8 @@
   padding-top: 27px;
   padding-right: 30px;
   padding-left: 30px;
-  background: transparent url("../img/zigzag-fill-desktop-7.png") bottom repeat-x;
+  background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+  background-size: 320px 7px;
 
   @media only screen and (min-width: 768px) and (max-width: 1249px) {
     position: relative;
@@ -29,7 +30,8 @@
     padding-right: 50px;
     padding-top: 45px;
     padding-bottom: 69px;
-    background: transparent url("../img/zigzag-fill-desktop-6.png") bottom repeat-x;
+    background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background-size: 768px 17px;
   }
 
   @media (min-width: 1250px) {
@@ -44,7 +46,8 @@
     padding-left: 174px;
     padding-top: 123px;
     padding-bottom: 96px;
-    background: transparent url("../img/zigzag-fill-desktop-4.png") bottom repeat-x;
+    background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background-size: 1050px 23px;
   }
 }
 /* -------------------------------------------------------------- */
