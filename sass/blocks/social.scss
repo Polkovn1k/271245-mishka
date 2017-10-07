@@ -3,25 +3,25 @@
   @include flex-row();
   flex-wrap: nowrap;
   justify-content: space-between;
+  width: 147px;
   margin: 0px auto;
   padding: 0px;
-  width: 147px;
   list-style-type: none;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: static;
     justify-content: space-between;
     margin: 0px;
-    padding-left: 41px;
     padding-top: 5px;
+    padding-left: 41px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: static;
     justify-content: space-between;
     margin: 0px;
-    padding-left: 41px;
     padding-top: 5px;
+    padding-left: 41px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -29,25 +29,25 @@
   content: "";
   position: absolute;
   display: block;
-  height: 1px;
   top: 56px;
   right: -56px;
   left: -56px;
+  height: 1px;
   background: $socisa-bg-icon;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: none;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     display: none;
   }
 }
 /* -------------------------------------------------------------- */
 .social__item {
-  @include field-reset();
   min-height: 31px;
   min-width: 32px;
+  @include field-reset();
 
   a {
     display: block;
@@ -56,14 +56,14 @@
     font-size: 0px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     a {
 
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
     a {
 
@@ -78,7 +78,7 @@
     background-size: 22px 21px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     margin-right: 26px;
 
     a {
@@ -86,7 +86,7 @@
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     margin-right: 26px;
 
     a {
@@ -102,7 +102,7 @@
     background-size: 15px 29px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     margin-right: 26px;
 
     a {
@@ -110,7 +110,7 @@
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     margin-right: 26px;
     a {
 
@@ -125,14 +125,14 @@
     background-size: 24px 20px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     a {
 
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
     a {
 

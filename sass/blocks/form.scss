@@ -1,18 +1,16 @@
 .form {
   padding-bottom: 55px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    display: flex;
-    flex-direction: row;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    @include flex-row();
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
   }
 
-  @media (min-width: 1250px) {
-    display: flex;
-    flex-direction: row;
+  @media (min-width: $min-desktop) {
+    @include flex-row();
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -24,12 +22,12 @@
   width: 260px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 100%;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 100%;
     margin: 0px;
   }
@@ -37,12 +35,12 @@
 /* -------------------------------------------------------------- */
 .form__container--dark {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    background: #f1f1f1;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    background: $footer-bg;
   }
 
-  @media (min-width: 1250px) {
-    background: #f1f1f1;
+  @media (min-width: $min-desktop) {
+    background: $footer-bg;
   }
 }
 /* -------------------------------------------------------------- */
@@ -50,49 +48,48 @@
   @include field-reset();
   padding-bottom: 20px;
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 1;
     position: relative;
     width: 768px;
     margin: 0px auto;
-    padding-left: 217px;
     padding-right: 50px;
     padding-bottom: 11px;
+    padding-left: 217px;
     border: none;
-    order: 1;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 1;
     position: relative;
     width: 1250px;
     margin: 0px auto;
-    padding-left: 275px;
     padding-right: 100px;
     padding-bottom: 11px;
+    padding-left: 275px;
     border: none;
-    order: 1;
   }
 }
 /* -------------------------------------------------------------- */
 .form__type-title {
   width: 62px;
   margin-bottom: 34px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 17px;
   font-size: 17px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 1px;
     left: 51px;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 1px;
     left: 164px;
@@ -101,19 +98,18 @@
 }
 /* -------------------------------------------------------------- */
 .form__type-container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   flex-wrap: nowrap;
 
   input {
     display: none;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
   }
 }
@@ -121,28 +117,26 @@
 .form__type-label {
   position: relative;
   display: block;
-  padding-left: 64px;
   padding-right: 10px;
   padding-bottom: 24px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  padding-left: 64px;
+  @include font-bold();
   line-height: 18px;
   font-size: 17px;
-  color: #000000;
+  color: $main-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    padding-left: 81px;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-right: 0px;
     padding-bottom: 57px;
-    font-family: "Open Sans";
-    font-weight: 700;
+    padding-left: 81px;
+    @include font-bold();
     line-height: 19px;
     font-size: 19px;
   }
 
-  @media (min-width: 1250px) {
-    padding-left: 81px;
+  @media (min-width: $min-desktop) {
     padding-bottom: 56px;
+    padding-left: 81px;
     line-height: 19px;
     font-size: 19px;
   }
@@ -156,18 +150,18 @@
   left: 2px;
   width: 38px;
   height: 38px;
-  border: 2px solid #444444;
+  border: 2px solid $grey-color;
   border-radius: 50%;
   cursor: pointer;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     top: -15px;
     left: 0px;
     width: 52px;
     height: 52px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     top: -15px;
     left: 0px;
     width: 52px;
@@ -177,66 +171,65 @@
 /* -------------------------------------------------------------- */
 #form__type-1:checked ~ .form__type-label--1::before,
 #form__type-2:checked ~ .form__type-label--2::before {
-  background: #62d1ba;
-  box-shadow: inset 0px 0px 0px 9px #ffffff;
+  background: $green-color--lighter;
+  box-shadow: inset 0px 0px 0px 9px $add-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    box-shadow: inset 0px 0px 0px 13px #ffffff;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    box-shadow: inset 0px 0px 0px 13px $add-color;
   }
 
-  @media (min-width: 1250px) {
-    box-shadow: inset 0px 0px 0px 12px #ffffff;
+  @media (min-width: $min-desktop) {
+    box-shadow: inset 0px 0px 0px 12px $add-color;
   }
 }
 /* -------------------------------------------------------------- */
 .form__color {
   @include field-reset();
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 2;
     position: relative;
     width: 768px;
     margin: 0px auto;
     padding-top: 65px;
+    padding-right: 50px;
     padding-bottom: 11px;
     padding-left: 217px;
-    padding-right: 50px;
     border: none;
-    order: 2;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 2;
     position: relative;
     width: 1250px;
     margin: 0px auto;
-    padding-left: 275px;
+    padding-top: 65px;
     padding-right: 100px;
     padding-bottom: 11px;
-    padding-top: 65px;
+    padding-left: 275px;
     border: none;
-    order: 2;
   }
 }
 /* -------------------------------------------------------------- */
 .form__color-title {
   margin-bottom: 35px;
   width: 62px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 17px;
   font-size: 17px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 66px;
     left: 51px;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 66px;
     left: 161px;
@@ -250,15 +243,13 @@
     display: none;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    display: flex;
-    flex-direction: row;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    @include flex-row();
     flex-wrap: wrap;
   }
 
-  @media (min-width: 1250px) {
-    display: flex;
-    flex-direction: row;
+  @media (min-width: $min-desktop) {
+    @include flex-row();
     flex-wrap: wrap;
   }
 }
@@ -266,36 +257,31 @@
 .form__color-label {
   position: relative;
   display: block;
-  padding-left: 63px;
   padding-right: 0px;
   padding-bottom: 43px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  padding-left: 63px;
+  @include font-bold();
   line-height: 18px;
   font-size: 17px;
-  color: #000000;
+  color: $main-color;
   letter-spacing: 0.3px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 262px;
-    padding-left: 80px;
     padding-right: 0px;
     padding-bottom: 57px;
-
-    font-family: "Open Sans";
-    font-weight: 700;
+    padding-left: 80px;
+    @include font-bold();
     line-height: 19px;
     font-size: 19px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 263px;
-    padding-left: 80px;
     padding-right: 0px;
     padding-bottom: 57px;
-
-    font-family: "Open Sans";
-    font-weight: 700;
+    padding-left: 80px;
+    @include font-bold();
     line-height: 19px;
     font-size: 19px;
   }
@@ -303,13 +289,13 @@
 /* -------------------------------------------------------------- */
 .form__color-label:nth-child(2n) {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 230px;
-    padding-left: 80px;
     padding-right: 0px;
+    padding-left: 80px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
   }
 }
@@ -322,17 +308,17 @@
   left: 1px;
   width: 40px;
   height: 39px;
-  border: 2px solid #444444;
+  border: 2px solid $grey-color;
   cursor: pointer;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     top: -15px;
     left: 0px;
     width: 54px;
     height: 52px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     top: -15px;
     left: 0px;
     width: 54px;
@@ -349,12 +335,12 @@
   background: transparent url("../img/icon-tick.svg") 5px 9px no-repeat;
   background-size: 70%;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     background: transparent url("../img/icon-tick.svg") 8px 12px no-repeat;
     background-size: 73%;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     background: transparent url("../img/icon-tick.svg") 8px 12px no-repeat;
     background-size: 73%;
   }
@@ -364,51 +350,50 @@
   @include field-reset();
   padding-bottom: 9px;
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 3;
     position: relative;
     width: 768px;
     margin: 0px auto;
-    padding-left: 217px;
-    padding-right: 50px;
     padding-top: 50px;
+    padding-right: 50px;
     padding-bottom: 26px;
+    padding-left: 217px;
     border: none;
-    order: 3;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 3;
     position: relative;
     width: 1250px;
     margin: 0px auto;
     padding-top: 50px;
-    padding-left: 275px;
     padding-right: 100px;
     padding-bottom: 26px;
+    padding-left: 275px;
     border: none;
-    order: 3;
   }
 }
 /* -------------------------------------------------------------- */
 .form__name-title {
   width: 62px;
   margin-bottom: 27px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 17px;
   font-size: 17px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 66px;
     left: 51px;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 67px;
     left: 161px;
@@ -417,15 +402,14 @@
 }
 /* -------------------------------------------------------------- */
 .form__name-container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   flex-wrap: nowrap;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     padding-right: 175px;
   }
 }
@@ -433,11 +417,10 @@
 .form__name-label {
   display: block;
   padding-bottom: 22px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 18px;
   font-size: 17px;
-  color: #000000;
+  color: $main-color;
 
   span {
 
@@ -445,20 +428,18 @@
 
   input {
     display: block;
-    min-height: 52px;
     width: 100%;
-    font-family: "Open Sans";
-    font-weight: 400;
+    min-height: 52px;
+    @include font-regular();
     line-height: 18px;
     font-size: 17px;
-    color: #444444;
+    color: $grey-color;
     border: none;
-    box-shadow: inset 0px -2px #000000;
+    box-shadow: inset 0px -2px $main-color;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    display: flex;
-    flex-direction: row;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    @include flex-row();
     align-items: center;
     padding-bottom: 24px;
     line-height: 19px;
@@ -470,16 +451,14 @@
 
     input {
       padding-left: 15px;
-      font-family: "Open Sans";
-      font-weight: 400;
+      @include font-regular();
       line-height: 19px;
       font-size: 19px;
     }
   }
 
-  @media (min-width: 1250px) {
-    display: flex;
-    flex-direction: row;
+  @media (min-width: $min-desktop) {
+    @include flex-row();
     align-items: center;
     padding-bottom: 24px;
     line-height: 19px;
@@ -491,8 +470,7 @@
 
     input {
       padding-left: 15px;
-      font-family: "Open Sans";
-      font-weight: 400;
+      @include font-regular();
       line-height: 19px;
       font-size: 19px;
     }
@@ -503,52 +481,50 @@
   @include field-reset();
   padding-bottom: 32px;
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 4;
     position: relative;
     width: 768px;
     margin: 0px auto;
-    padding-left: 217px;
-    padding-right: 50px;
     padding-top: 50px;
+    padding-right: 50px;
     padding-bottom: 0px;
+    padding-left: 217px;
     border: none;
-    order: 4;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 4;
     position: relative;
     width: 1250px;
     margin: 0px auto;
-    padding-left: 275px;
+    padding-top: 50px;
     padding-right: 100px;
     padding-bottom: 0px;
-    padding-top: 50px;
+    padding-left: 275px;
     border: none;
-
-    order: 4;
   }
 }
 /* -------------------------------------------------------------- */
 .form__phone-title {
   width: 62px;
   margin-bottom: 6px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 17px;
   font-size: 17px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 67px;
     left: 52px;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 67px;
     left: 162px;
@@ -558,11 +534,11 @@
 /* -------------------------------------------------------------- */
 .form__phone-container {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     padding-right: 175px;
   }
 }
@@ -571,35 +547,37 @@
 
   input {
     display: block;
-    min-height: 52px;
     width: 100%;
-    font-family: "Open Sans";
-    font-weight: 400;
+    min-height: 52px;
+    @include font-regular();
     line-height: 18px;
     font-size: 17px;
-    color: #444444;
+    color: $grey-color;
     border: none;
-    box-shadow: inset 0px -2px #000000;
+    box-shadow: inset 0px -2px $main-color;
     background: url("../img/icon-phone.svg") right 7px top 11px no-repeat;
+    background-size: 25px 24px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     input {
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
       background: transparent url("../img/icon-phone.svg") right 26px top 11px no-repeat;
+      background-size: 25px 24px;
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
     input {
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
       background: transparent url("../img/icon-phone.svg") right 8px top 11px no-repeat;
+      background-size: 25px 24px;
     }
   }
 }
@@ -608,52 +586,50 @@
   @include field-reset();
   padding-bottom: 32px;
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 5;
     position: relative;
     width: 768px;
     margin: 0px auto;
-    padding-left: 217px;
-    padding-right: 50px;
     padding-top: 24px;
+    padding-right: 50px;
     padding-bottom: 50px;
+    padding-left: 217px;
     border: none;
-    order: 5;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 5;
     position: relative;
     width: 1250px;
     margin: 0px auto;
-    padding-left: 275px;
+    padding-top: 24px;
     padding-right: 100px;
     padding-bottom: 50px;
-    padding-top: 24px;
+    padding-left: 275px;
     border: none;
-
-    order: 5;
   }
 }
 /* -------------------------------------------------------------- */
 .form__email-title {
   width: 81px;
   margin-bottom: 6px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 17px;
   font-size: 17px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 40px;
     left: 52px;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 42px;
     left: 162px;
@@ -663,11 +639,11 @@
 /* -------------------------------------------------------------- */
 .form__email-container {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     padding-right: 175px;
   }
 }
@@ -676,35 +652,37 @@
 
   input {
     display: block;
-    min-height: 52px;
     width: 100%;
-    font-family: "Open Sans";
-    font-weight: 400;
+    min-height: 52px;
+    @include font-regular();
     line-height: 18px;
     font-size: 17px;
-    color: #444444;
+    color: $grey-color;
     border: none;
-    box-shadow: inset 0px -2px #000000;
+    box-shadow: inset 0px -2px $main-color;
     background: url("../img/icon-mail.svg") right 3px top 11px no-repeat;
+    background-size: 32px auto;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     input {
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
       background: transparent url("../img/icon-mail.svg") right 22px top 11px no-repeat;
+      background-size: 32px auto;
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
     input {
       padding-left: 17px;
       line-height: 19px;
       font-size: 19px;
       background: transparent url("../img/icon-mail.svg") right 4px top 11px no-repeat;
+      background-size: 32px auto;
     }
   }
 }
@@ -713,53 +691,50 @@
   @include field-reset();
   padding-bottom: 12px;
   border: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 6;
     position: relative;
     width: 768px;
     margin: 0px auto;
-    padding-left: 217px;
-    padding-right: 50px;
     padding-top: 50px;
+    padding-right: 50px;
     padding-bottom: 49px;
+    padding-left: 217px;
     border: none;
-    order: 6;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 6;
     position: relative;
     width: 1250px;
     margin: 0px auto;
-    padding-left: 275px;
+    padding-top: 50px;
     padding-right: 100px;
     padding-bottom: 45px;
-    padding-top: 50px;
-
+    padding-left: 275px;
     border: none;
-
-    order: 6;
   }
 }
 /* -------------------------------------------------------------- */
 .form__addition-title {
   width: 62px;
   margin-bottom: 24px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 17px;
   font-size: 17px;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 66px;
     left: 51px;
     margin: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 67px;
     left: 163px;
@@ -769,34 +744,33 @@
 /* -------------------------------------------------------------- */
 .form__addition-container {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     padding-right: 175px;
   }
 }
 /* -------------------------------------------------------------- */
 .form__addition-label {
   width: 100%;
-  padding-left: 15px;
-  padding-top: 13px;
   min-height: 142px;
-  resize: none;
-  font-family: "Open Sans";
-  font-weight: 400;
+  padding-top: 13px;
+  padding-left: 15px;
+  @include font-regular();
   line-height: 18px;
   font-size: 17px;
-  color: #444444;
-  border: 2px solid #000000;
+  color: $grey-color;
+  border: 2px solid $main-color;
+  resize: none;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     line-height: 19px;
     font-size: 19px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     line-height: 19px;
     font-size: 19px;
   }
@@ -807,40 +781,39 @@
   width: 260px;
   margin: 0 auto;
   padding-bottom: 31px;
-  font-family: "Open Sans";
-  font-weight: 400;
+  @include font-regular();
   line-height: 16px;
   font-size: 14px;
-  color: #444444;
+  color: $grey-color;
   letter-spacing: 0.1px;
-  border-color: #444444;
+  border-color: $grey-color;
 
   sup {
 
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 8;
     width: auto;
     margin: 0px;
     padding-bottom: 0px;
     padding-left: 137px;
     line-height: 30px;
     font-size: 17px;
-    order: 8;
 
     sup {
 
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 8;
     width: auto;
     margin: 0px;
     padding-bottom: 0px;
     padding-left: 173px;
     line-height: 30px;
     font-size: 17px;
-    order: 8;
 
     sup {
 

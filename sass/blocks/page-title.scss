@@ -3,34 +3,30 @@
   padding: 0px;
   padding-top: 71px;
   padding-bottom: 76px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 30px;
   font-size: 27px;
   text-align: center;
+  background: $footer-bg;
 
-  background: #f1f1f1;
-
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-top: 54px;
-    font-family: "Open Sans";
-    font-weight: 700;
+    @include font-bold();
     line-height: 50px;
     font-size: 43px;
-
-    background: #f1f1f1 url("../img/zigzag-fill-desktop.png") left 0px bottom -16px repeat-x;
+    background: $footer-bg url("../img/bg-zigzag-fill.svg") left 0px bottom -16px repeat-x;
+    background-size: 768px 28px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 100%;
     padding-top: 96px;
     padding-bottom: 103px;
-    font-family: "Open Sans";
-    font-weight: 700;
+    @include font-bold();
     line-height: 57px;
     font-size: 53px;
-
-    background: #f1f1f1 url("../img/zigzag-fill-desktop-2.png") left 0px bottom -16px repeat-x;
+    background: $footer-bg url("../img/bg-zigzag-fill.svg") left 0px bottom -16px repeat-x;
+    background-size: 1150px 34px;
   }
 }
 /* -------------------------------------------------------------- */
