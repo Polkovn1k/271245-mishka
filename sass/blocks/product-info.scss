@@ -1,28 +1,26 @@
 .product-info {
   display: none;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    display: flex;
-    flex-direction: row;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    position: absolute;
+    @include flex-row();
     flex-wrap: nowrap;
     justify-content: flex-end;
-    position: absolute;
     top: -38px;
     left: 50%;
     width: 384px;
     background: transparent;
   }
 
-  @media (min-width: 1250px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  @media (min-width: $min-desktop) {
     position: absolute;
     z-index: 10;
     top: 0px;
     left: 50%;
-    margin-left: -625px;
+    @include flex-row();
+    flex-wrap: nowrap;
     width: 1250px;
+    margin-left: -625px;
     padding-right: 100px;
     padding-left: 100px;
     background: transparent;
@@ -31,62 +29,59 @@
 /* -------------------------------------------------------------- */
 .product-info__new {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: none;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     display: block;
     padding-top: 19px;
     font-weight: 700;
     line-height: 24px;
     font-size: 15px;
-    color: #444444;
+    color: $grey-color;
     letter-spacing: 0.6px;
   }
 }
 /* -------------------------------------------------------------- */
 .product-info__sale {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: none;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     display: block;
-    padding-top: 18px;
     margin-left: 58px;
-    font-family: "Open Sans";
-    font-weight: 700;
+    padding-top: 18px;
+    @include font-bold();
     line-height: 24px;
     font-size: 15px;
-    color: #444444;
+    color: $grey-color;
     letter-spacing: 0.2px;
   }
 }
 /* -------------------------------------------------------------- */
 .product-info__delivery {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: block;
     width: 384px;
     padding-top: 14px;
     padding-right: 49px;
-    text-align: right;
-    font-family: "Open Sans";
-    font-weight: 400;
+    @include font-regular();
     line-height: 24px;
     font-size: 15px;
-    color: #444444;
+    color: $grey-color;
+    text-align: right;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     margin-left: auto;
     padding-top: 18px;
-    font-family: "Open Sans";
-    font-weight: 400;
+    @include font-regular();
     line-height: 24px;
     font-size: 15px;
-    color: #444444;
+    color: $grey-color;
   }
 }

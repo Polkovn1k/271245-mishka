@@ -1,12 +1,18 @@
 /* COLOR var ------------------------------------------------ */
-$main-color: #000000;
-$add-color: #ffffff;
-$green-color: #63d1bb;
-$green-color--dark: #56c3b2;
-$green-color--lighter: #62d1ba;
-$footer-bg: #f1f1f1;
-$grey-color: #444444;
-$controls-bg: #ececec;
-$btn-bg: #828282;
-$table-bg: #f9f9f9;
-$socisa-bg-icon: #e5e5e5;
+$main-color: #000000;                    //$main-color
+$add-color: #ffffff;                     //$add-color
+$green-color: #63d1bb;                   //$green-color
+$green-color--dark: #56c3b2;             //$green-color--dark
+$green-color--lighter: #62d1ba;          //$green-color--lighter
+$footer-bg: #f1f1f1;                     //$footer-bg
+$grey-color: #444444;                    //$grey-color
+$controls-bg: #ececec;                   //$controls-bg
+$btn-bg: #828282;                        //$btn-bg
+$table-bg: #f9f9f9;                      //$table-bg
+$socisa-bg-icon: #e5e5e5;                //$socisa-bg-icon
+$shadow: #c6c6c6;                        //$shadow
+
+/* ADAPTIVE var ------------------------------------------------ */
+$min-tablet: 768px;                      //$min-tablet
+$max-tablet: 1249px;                     //$max-tablet
+$min-desktop: 1250px;                    //$min-desktop

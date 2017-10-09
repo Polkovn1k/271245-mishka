@@ -9,63 +9,64 @@
   font-size: 17px;
   color: $grey-color;
   border: 2px solid $btn-bg;
-  outline: none;
   background: transparent;
+  outline: none;
+  cursor: pointer;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
   }
 }
 /* -------------------------------------------------------------- */
 .button--special {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 290px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 293px;
   }
 }
 /* -------------------------------------------------------------- */
 .button--contacts {
+  order: 5;
   width: 260px;
   margin: 0 auto;
-  order: 5;
   letter-spacing: 0.7px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 230px;
     letter-spacing: 0px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 230px;
     margin: 0px;
-    margin-left: 275px;
     margin-top: -91px;
+    margin-left: 275px;
     letter-spacing: 0.1px;
   }
 }
 /* -------------------------------------------------------------- */
 .button--comments {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 2;
     min-height: 10px;
     padding-right: 40px;
-    padding-left: 36px;
     padding-bottom: 15px;
-    order: 2;
+    padding-left: 36px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 2;
     width: 175px;
     margin-top: 9px;
-    order: 2;
   }
 }
 /* -------------------------------------------------------------- */
@@ -73,18 +74,18 @@
   width: 192px;
   margin: 0px auto;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    width: 584px;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 4;
+    width: 584px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 3;
+    width: 230px;
     margin-left: 762px;
     padding-bottom: 16px;
-    width: 230px;
     line-height: 17px;
     font-size: 17px;
-    order: 3;
   }
 }
 /* -------------------------------------------------------------- */
@@ -92,16 +93,16 @@
   width: 260px;
   margin: 0px auto;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 7;
     width: 230px;
     margin: 0px;
-    order: 7;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    order: 7;
     width: 230px;
     margin: 0px;
-    order: 7;
   }
 }
 /* -------------------------------------------------------------- */
@@ -110,16 +111,15 @@
   margin: 0px auto;
   padding-top: 17px;
   padding-bottom: 15px;
-  background: #63d1bb;
-  color: #ffffff;
+  color: $add-color;
+  background: $green-color;
   border: none;
-  cursor: pointer;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 350px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 350px;
   }
 }

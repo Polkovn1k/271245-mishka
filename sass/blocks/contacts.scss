@@ -1,15 +1,14 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   flex-wrap: nowrap;
   padding-bottom: 39px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-bottom: 57px;
   }
 
-  @media (min-width: 1250px) {
-    flex-direction: row;
+  @media (min-width: $min-desktop) {
+    @include flex-row();
     flex-wrap: wrap;
     align-items: flex-start;
     width: 1250px;
@@ -25,57 +24,56 @@
   padding-top: 35px;
   padding-bottom: 37px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     @include flex-row();
     align-items: flex-start;
     flex-wrap: wrap;
     width: 768px;
     padding-top: 62px;
-    padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 56px;
+    padding-left: 50px;
   }
 
-  @media (min-width: 1250px) {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $min-desktop) {
+    @include flex-column();
     flex-wrap: nowrap;
     width: 624px;
     margin: 0px;
-    padding-left: 271px;
     padding-top: 141px;
     padding-bottom: 0px;
+    padding-left: 271px;
   }
 }
 /* -------------------------------------------------------------- */
 .contacts__title {
+  order: 1;
   @include field-reset();
   padding-right: 30px;
   padding-bottom: 26px;
   padding-left: 30px;
-  order: 1;
   @include font-bold();
   line-height: 30px;
   font-size: 18px;
   color: $main-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: relative;
     width: 100%;
-    padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 49px;
+    padding-left: 0px;
     line-height: 50px;
     font-size: 43px;
     letter-spacing: -0.7px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: relative;
     width: 100%;
-    padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 49px;
+    padding-left: 0px;
     line-height: 57px;
     font-size: 53px;
     letter-spacing: -0.4px;
@@ -84,49 +82,51 @@
 /* -------------------------------------------------------------- */
 .contacts__title::before {
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     content: "";
     position: absolute;
+    display: block;
     right: 3px;
     top: -15px;
-    display: block;
     width: 47px;
     height: 81px;
     background: transparent url("../img/icon-flag.svg") no-repeat;
+    background-size: 47px 81px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     content: "";
     position: absolute;
+    display: block;
     left: -108px;
     top: -8px;
-    display: block;
     width: 47px;
     height: 81px;
     background: transparent url("../img/icon-flag.svg") no-repeat;
+    background-size: 47px 81px;
   }
 }
 /* -------------------------------------------------------------- */
 .contacts__text {
+  order: 2;
   @include flex-row()
   @include field-reset();
   padding-right: 30px;
   padding-bottom: 29px;
   padding-left: 30px;
-  order: 2;
   @include font-regular();
   line-height: 30px;
   font-size: 15px;
   color: $grey-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 334px;
     padding-left: 0px;
     line-height: 30px;
     font-size: 17px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 334px;
     padding-left: 3px;
     line-height: 30px;
@@ -135,14 +135,14 @@
 }
 /* -------------------------------------------------------------- */
 .contacts__text--last {
-  padding-bottom: 0px;
   order: 3;
+  padding-bottom: 0px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
   }
 }
@@ -151,11 +151,11 @@
   display: block;
   width: 75px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 79px;
   }
 }
@@ -166,13 +166,13 @@
   color: $grey-color;
   border-bottom: 1px solid $green-color--lighter;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: auto;
   }
 
-  @media (min-width: 1250px) {
-    line-height: 29px;
+  @media (min-width: $min-desktop) {
     width: 198px;
+    line-height: 29px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -184,7 +184,7 @@
     display: block;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: auto;
 
     span {
@@ -192,9 +192,9 @@
     }
   }
 
-  @media (min-width: 1250px) {
-    line-height: 30px;
+  @media (min-width: $min-desktop) {
     width: 228px;
+    line-height: 30px;
 
     span {
 
@@ -211,7 +211,7 @@
     min-height: 457px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 100%;
     padding-bottom: 51px;
 
@@ -221,7 +221,7 @@
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 525px;
     min-height: 457px;
     padding-top: 71px;

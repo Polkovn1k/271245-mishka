@@ -2,12 +2,12 @@
   padding-top: 31px;
   padding-bottom: 58px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-top: 0px;
     padding-bottom: 63px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     padding-top: 57px;
     padding-bottom: 105px;
   }
@@ -17,27 +17,24 @@
   width: 260px;
   margin: 0px auto;
   padding-bottom: 33px;
-
   box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1),
-  inset 0px 1px rgba(68, 68, 68, 0.1),
-  inset -1px 0px rgba(68, 68, 68, 0.1),
-  inset 1px 0px rgba(68, 68, 68, 0.1);
+              inset 0px 1px rgba(68, 68, 68, 0.1),
+              inset -1px 0px rgba(68, 68, 68, 0.1),
+              inset 1px 0px rgba(68, 68, 68, 0.1);
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    width: 668px;
-    display: flex;
-    flex-direction: column;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    @include flex-column();
     flex-wrap: nowrap;
     justify-content: flex-start;
+    width: 668px;
     padding-bottom: 46px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
+    position: relative;
     width: 1050px;
     min-height: 455px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
@@ -47,50 +44,50 @@
   position: relative;
   margin: 0px;
   padding: 0px;
-  padding-left: 90px;
   padding-top: 24px;
   padding-bottom: 24px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  padding-left: 90px;
+  @include font-bold();
   line-height: 24px;
   font-size: 17px;
   letter-spacing: 0.2px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 2;
+    padding-bottom: 31px;
+    padding-left: 106px;
     line-height: 24px;
     font-size: 20px;
-    padding-left: 106px;
-    padding-bottom: 31px;
-    order: 2;
   }
 
-  @media (min-width: 1250px) {
-    padding-left: 760px;
-    padding-right: 60px;
+  @media (min-width: $min-desktop) {
+    order: 1;
     padding-top: 96px;
+    padding-right: 60px;
     padding-bottom: 33px;
+    padding-left: 760px;
     line-height: 24px;
     font-size: 20px;
-    order: 1;
   }
 }
 /* -------------------------------------------------------------- */
 .prepare__title::before {
   content: "";
-  display: block;
   position: absolute;
-  width: 35px;
-  height: 35px;
+  display: block;
   top: 30px;
   left: 34px;
+  width: 35px;
+  height: 35px;
   background: transparent url("../img/icon-video.svg") no-repeat;
+  background-size: 32px auto;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     top: 19px;
     left: 42px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     top: 42px;
     left: auto;
     right: 253px;
@@ -102,32 +99,33 @@
   padding-bottom: 23px;
 
   img {
-
+    width: 260px;
+    height: 150px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 1;
     padding-bottom: 12px;
 
     img {
-      max-width: none;
       width: 668px;
       height: 455px;
+      max-width: none;
       box-shadow: 0px 1px rgba(68, 68, 68, 0.1);
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
-    width: 682px;
-    min-height: 455px;
     top: 0px;
     left: 0px;
+    width: 682px;
+    min-height: 455px;
 
     img {
-      max-width: none;
       width: 682px;
       height: 455px;
+      max-width: none;
     }
   }
 }
@@ -141,13 +139,14 @@
   width: 102px;
   height: 78px;
   background: transparent url("../img/icon-play.svg") no-repeat;
+  background-size: 102px 78px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     top: 190px;
     left: 284px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     top: 190px;
     left: 291px;
   }
@@ -156,28 +155,27 @@
 .prepare__text {
   margin: 0px;
   padding: 0px;
-  padding-left: 34px;
   padding-right: 40px;
   padding-bottom: 25px;
-  font-family: "Open Sans";
-  font-weight: 400;
+  padding-left: 34px;
+  @include font-regular();
   line-height: 24px;
   font-size: 13px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
-    line-height: 30px;
-    font-size: 15px;
-    padding-left: 41px;
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    order: 3;
     padding-right: 45px;
     padding-bottom: 36px;
-    order: 3;
-  }
-
-  @media (min-width: 1250px) {
-    padding-left: 760px;
-    padding-bottom: 46px;
+    padding-left: 41px;
     line-height: 30px;
     font-size: 15px;
+  }
+
+  @media (min-width: $min-desktop) {
     order: 2;
+    padding-bottom: 46px;
+    padding-left: 760px;
+    line-height: 30px;
+    font-size: 15px;
   }
 }

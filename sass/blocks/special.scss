@@ -1,50 +1,50 @@
 .special {
 
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
 
   }
 }
 /* -------------------------------------------------------------- */
 .special__container {
   @include mobal-container();
-  padding-bottom: 42px;
   padding-top: 27px;
   padding-right: 30px;
+  padding-bottom: 42px;
   padding-left: 30px;
-  background: transparent url("../img/zigzag-fill-desktop-7.png") bottom repeat-x;
+  background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+  background-size: 320px 7px;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     align-items: flex-start;
     flex-wrap: wrap;
     width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 45px;
+    padding-right: 50px;
     padding-bottom: 69px;
-    background: transparent url("../img/zigzag-fill-desktop-6.png") bottom repeat-x;
+    padding-left: 50px;
+    background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background-size: 768px 17px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     align-items: flex-start;
     flex-wrap: wrap;
     width: 1050px;
-    padding: 0px;
-    padding-right: 100px;
-    padding-left: 174px;
     padding-top: 123px;
+    padding-right: 100px;
     padding-bottom: 96px;
-    background: transparent url("../img/zigzag-fill-desktop-4.png") bottom repeat-x;
+    padding-left: 174px;
+    background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background-size: 1050px 23px;
   }
 }
 /* -------------------------------------------------------------- */
@@ -56,14 +56,14 @@
   font-size: 25px;
   color: $main-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-bottom: 49px;
     line-height: 50px;
     font-size: 43px;
     letter-spacing: -0.4px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: relative;
     z-index: 10;
     padding-bottom: 49px;
@@ -82,30 +82,28 @@
   font-size: 17px;
   color: $green-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 45px;
     right: 50px;
     width: 126px;
-    padding-bottom: 0px;
     padding-top: 12px;
-
-
-    text-align: center;
+    padding-bottom: 0px;
     line-height: 17px;
     font-size: 17px;
-    color: #63d1bb;
+    color: $green-color;
+    text-align: center;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 139px;
     left: 19px;
     width: 126px;
-    text-align: center;
     line-height: 17px;
     font-size: 17px;
-    color: #63d1bb;
+    color: $green-color;
+    text-align: center;
   }
 }
 /* -------------------------------------------------------------- */
@@ -117,14 +115,14 @@
   font-size: 15px;
   color: $grey-color;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 295px;
     padding-bottom: 35px;
     line-height: 30px;
     font-size: 17px;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 295px;
     padding-bottom: 48px;
     line-height: 30px;
@@ -142,20 +140,20 @@
   border-collapse: collapse;
 
   tr {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $controls-bg;
   }
 
   td {
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid $controls-bg;
   }
 
   td:first-child {
     width: 95px;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 295px;
     line-height: 20px;
     font-size: 15px;
@@ -174,7 +172,7 @@
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 295px;
 
     tr {
@@ -184,7 +182,7 @@
     td {
       padding-top: 6px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #ececec;
+      border-bottom: 1px solid $controls-bg;
     }
 
     td:first-child {
@@ -199,25 +197,25 @@
 
   img {
     display: block;
-    margin: 0 auto;
     width: 260px;
     height: 315px;
+    margin: 0 auto;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
     top: 125px;
     right: 50px;
 
     img {
       display: block;
-      margin: 0 auto;
       width: 334px;
       height: 404px;
+      margin: 0 auto;
     }
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     position: absolute;
     top: 44px;
     right: 0px;
@@ -225,9 +223,9 @@
 
     img {
       display: block;
-      margin: 0 auto;
       width: 525px;
       height: 636px;
+      margin: 0 auto;
     }
   }
 }
@@ -236,30 +234,30 @@
   display: block;
   padding-bottom: 25px;
   @include font-bold();
-  text-align: center;
   line-height: 24px;
   font-size: 17px;
   color: $grey-color;
+  text-align: center;
 
-  @media only screen and (min-width: 768px) and (max-width: 1249px) {
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 295px;
     padding-top: 57px;
-    padding-left: 70px;
     padding-bottom: 34px;
-    text-align: left;
+    padding-left: 70px;
     line-height: 24px;
     font-size: 20px;
     letter-spacing: 0.1px;
+    text-align: left;
   }
 
-  @media (min-width: 1250px) {
+  @media (min-width: $min-desktop) {
     width: 295px;
     padding-top: 107px;
-    padding-left: 74px;
     padding-bottom: 34px;
-    text-align: left;
+    padding-left: 74px;
     line-height: 24px;
     font-size: 20px;
     letter-spacing: 0.1px;
+    text-align: left;
   }
 }
