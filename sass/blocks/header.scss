@@ -57,7 +57,7 @@
   width: 86px;
   @include field-reset();
 
-  img {
+  svg {
     display: block;
     @include field-reset();
     width: 86px;
@@ -67,7 +67,7 @@
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 113px;
 
-    img {
+    svg {
       width: 113px;
       height: 46px;
     }
@@ -76,10 +76,46 @@
   @media (min-width: $min-desktop) {
     width: 149px;
 
-    img {
+    svg {
       width: 149px;
       height: 72px;
     }
+  }
+}
+/* -------------------------------------------------------------- */
+.header__logo-mobile {
+  display: block;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: none;
+  }
+}
+/* -------------------------------------------------------------- */
+.header__logo-tablet {
+  display: none;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    display: block;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: none;
+  }
+}
+/* -------------------------------------------------------------- */
+.header__logo-desktop {
+  display: none;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: block;
   }
 }
 /* -------------------------------------------------------------- */
