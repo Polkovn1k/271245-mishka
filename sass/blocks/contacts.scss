@@ -12,15 +12,15 @@
     flex-wrap: wrap;
     align-items: flex-start;
     width: 1250px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-bottom: 66px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__container {
   @include flex-column();
   @include mobal-container();
-  padding: 0px;
+  padding: 0;
   padding-top: 35px;
   padding-bottom: 37px;
 
@@ -39,13 +39,13 @@
     @include flex-column();
     flex-wrap: nowrap;
     width: 624px;
-    margin: 0px;
+    margin: 0;
     padding-top: 141px;
     padding-bottom: 0px;
     padding-left: 271px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__title {
   order: 1;
   @include field-reset();
@@ -60,9 +60,9 @@
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: relative;
     width: 100%;
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 49px;
-    padding-left: 0px;
+    padding-left: 0;
     line-height: 50px;
     font-size: 43px;
     letter-spacing: -0.7px;
@@ -71,15 +71,15 @@
   @media (min-width: $min-desktop) {
     position: relative;
     width: 100%;
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 49px;
-    padding-left: 0px;
+    padding-left: 0;
     line-height: 57px;
     font-size: 53px;
     letter-spacing: -0.4px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__title::before {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -106,7 +106,7 @@
     background-size: 47px 81px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__text {
   order: 2;
   @include flex-row()
@@ -121,7 +121,7 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 334px;
-    padding-left: 0px;
+    padding-left: 0;
     line-height: 30px;
     font-size: 17px;
   }
@@ -133,10 +133,10 @@
     font-size: 17px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__text--last {
   order: 3;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
@@ -146,7 +146,7 @@
 
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__type {
   display: block;
   width: 75px;
@@ -159,7 +159,7 @@
     width: 79px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__type-email {
   display: block;
   width: 185px;
@@ -175,7 +175,7 @@
     line-height: 29px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__type-address {
   display: block;
   width: 150px;
@@ -201,7 +201,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .contacts__map {
   width: 100%;
   padding-bottom: 35px;
@@ -232,7 +232,7 @@
     }
   }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 .contacts__type-email:hover {
   color: $input-add;
 }

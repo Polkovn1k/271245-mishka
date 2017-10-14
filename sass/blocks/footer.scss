@@ -9,7 +9,7 @@
 
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__container {
   @include mobal-container();
   padding-top: 24px;
@@ -41,7 +41,7 @@
     padding-left: 100px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__logo {
   display: none;
 
@@ -53,7 +53,7 @@
     display: block;
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__logo-link {
 
   svg {
@@ -78,7 +78,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__developers {
   @include flex-row();
   justify-content: center;
@@ -98,7 +98,7 @@
     display: block;
     width: 27px;
     height: 34px;
-    font-size: 0px;
+    font-size: 0;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -125,7 +125,7 @@
     }
   }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 a .footer__logo-footer {
   fill: $main-color;
 }

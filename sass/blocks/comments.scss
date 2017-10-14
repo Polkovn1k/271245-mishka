@@ -8,7 +8,7 @@
 
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__container {
   @include mobal-container()
   padding-top: 32px;
@@ -28,12 +28,12 @@
     padding-right: 50px;
     padding-bottom: 100px;
     padding-left: 50px;
-    background: url("../img/review@1x.jpg") 0px 0px no-repeat,
+    background: url("../img/review@1x.jpg") 0 0 no-repeat,
                 url("../img/bg-zigzag-line.svg") bottom repeat-x;
     background-size: 350px auto, 768px 17px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/review@2x.jpg") 0px 0px no-repeat,
+      background: url("../img/review@2x.jpg") 0 0 no-repeat,
                   url("../img/bg-zigzag-line.svg") bottom repeat-x;
       background-size: 350px auto, 768px 17px;
     }
@@ -46,21 +46,21 @@
     flex-wrap: wrap;
     width: 1050px;
     padding-top: 126px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 154px;
     padding-left: 175px;
-    background: url("../img/review@1x.jpg") 0px 56px no-repeat,
+    background: url("../img/review@1x.jpg") 0 56px no-repeat,
                 url("../img/bg-zigzag-line.svg") bottom repeat-x;
     background-size: 350px auto, 1050px 23px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/review@2x.jpg") 0px 56px no-repeat,
+      background: url("../img/review@2x.jpg") 0 56px no-repeat,
                   url("../img/bg-zigzag-line.svg") bottom repeat-x;
       background-size: 350px auto, 1050px 23px;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__title {
   @include field-reset();
   padding-bottom: 23px;
@@ -86,7 +86,7 @@
     letter-spacing: -0.8px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__text {
   @include field-reset();
   padding-bottom: 28px;
@@ -110,7 +110,7 @@
     font-size: 17px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__name {
   display: block;
   padding-bottom: 30px;
@@ -127,7 +127,7 @@
     line-height: 30px;
     font-size: 17px;
     color: $grey-color;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -153,7 +153,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__controls {
   @include flex-row();
   width: 100%;
@@ -169,12 +169,12 @@
     width: 176px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__controls-direction {
   width: 50%;
   padding-top: 26px;
   padding-bottom: 26px;
-  font-size: 0px;
+  font-size: 0;
   border: 1px solid $controls-bg;
   background: transparent url("../img/icon-right-arrow.svg") top 12px left 37px no-repeat;
   background-size: 51px 26px;
@@ -191,7 +191,7 @@
     background-size: 51px 26px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .comments__controls-direction:first-child {
   transform: rotate(180deg);
   background-position: 40px 14px;
@@ -204,7 +204,7 @@
     background-position: 18px 11px;
   }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 .comments__controls-direction:hover {
   opacity: 0.6;
 }
