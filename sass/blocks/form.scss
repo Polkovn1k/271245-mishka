@@ -820,3 +820,193 @@
     }
   }
 }
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.form__type-label:hover::before {
+  border-color: $green-color--lighter;
+}
+
+.form__type-label:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.form__color-label:hover::before {
+  border-color: $green-color--lighter;
+}
+
+.form__color-label:active::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input:hover,
+.form__name-label input:active,
+.form__name-label input:focus {
+  outline: none;
+  box-shadow: inset 0px -2px $green-color--lighter;
+}
+
+.form__name-label input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input:hover::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__name-label input:active::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__name-label input:active::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__name-label input:active:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__phone-label input:hover,
+.form__phone-label input:active,
+.form__phone-label input:focus {
+  outline: none;
+  background-image: url("../img/icon-phone--stat.svg");
+  box-shadow: inset 0px -2px $green-color--lighter;
+}
+
+.form__phone-label input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__phone-label input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__phone-label input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__phone-label input:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__phone-label input:hover::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__phone-label input:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__phone-label input:active::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__phone-label input:active::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__phone-label input:active:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__email-label input:hover,
+.form__email-label input:active,
+.form__email-label input:focus {
+  outline: none;
+  background-image: url("../img/icon-mail--stat.svg");
+  box-shadow: inset 0px -2px $green-color--lighter;
+}
+
+.form__email-label input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__email-label input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__email-label input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__email-label input:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__email-label input:hover::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__email-label input:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__email-label input:active::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__email-label input:active::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__email-label input:active:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__addition-label:hover,
+.form__addition-label:active,
+.form__addition-label:focus {
+  outline: none;
+  border: 2px solid $green-color--lighter;
+}
+
+.form__addition-label::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__addition-label::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__addition-label:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__addition-label:hover::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__addition-label:hover::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__addition-label:hover:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form__addition-label:active::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__addition-label:active::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.form__addition-label:active:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}

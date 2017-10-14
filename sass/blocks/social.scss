@@ -2,8 +2,7 @@
   position: relative;
   @include flex-row();
   flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 147px;
+  width: 150px;
   margin: 0px auto;
   padding: 0px;
   list-style-type: none;
@@ -72,14 +71,16 @@
 }
 /* -------------------------------------------------------------- */
 .social__item--insta {
+  padding-top: 6px;
+  padding-right: 42px;
+  padding-left: 2px;
 
   a {
-    background: transparent url("../img/icon-insta.svg") no-repeat top 6px left 1px;
-    background-size: 22px 21px;
+    background: transparent;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    margin-right: 26px;
+    padding-right: 63px;
 
     a {
 
@@ -87,7 +88,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    margin-right: 26px;
+    padding-right: 63px;
 
     a {
 
@@ -96,14 +97,14 @@
 }
 /* -------------------------------------------------------------- */
 .social__item--facebook {
+  padding-right: 37px;
 
   a {
-    background: transparent url("../img/icon-fb.svg") no-repeat top 1px left 6px;
-    background-size: 15px 29px;
+
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    margin-right: 26px;
+    padding-right: 55px;
 
     a {
 
@@ -111,7 +112,8 @@
   }
 
   @media (min-width: $min-desktop) {
-    margin-right: 26px;
+    padding-right: 55px;
+
     a {
 
     }
@@ -119,10 +121,10 @@
 }
 /* -------------------------------------------------------------- */
 .social__item--twitter {
+  padding-top: 5px;
 
   a {
-    background: transparent url("../img/icon-twitter.svg") no-repeat top 6px left 3px;
-    background-size: 24px 20px;
+
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -138,4 +140,22 @@
 
     }
   }
+}
+/* HOVER/ACTIVE/FOCUS=============================================== */
+a .social__icon-insta,
+a .social__icon-fb,
+a .social__icon-twitter {
+  fill: $main-color;
+}
+
+a:hover .social__icon-insta,
+a:hover .social__icon-fb,
+a:hover .social__icon-twitter {
+  fill: $input-add;
+}
+
+a:active .social__icon-insta,
+a:active .social__icon-fb,
+a:active .social__icon-twitter {
+  fill: rgba(70, 193, 174, 0.3);
 }

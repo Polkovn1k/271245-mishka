@@ -255,4 +255,7 @@
 
   }
 }
-
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.modal__size-label:hover {
+  box-shadow: inset 0px 0px 0px 2px rgba(68, 68, 68, 0.3);
+}

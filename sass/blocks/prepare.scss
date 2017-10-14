@@ -97,6 +97,7 @@
 .prepare__visual {
   position: relative;
   padding-bottom: 23px;
+  cursor: pointer;
 
   img {
     width: 260px;
@@ -177,5 +178,41 @@
     padding-left: 760px;
     line-height: 30px;
     font-size: 15px;
+  }
+}
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.prepare__visual:hover::before {
+  top: 28px;
+  left: 70px;
+  width: 122.4px;
+  height: 93.6px;
+  background-size: 122.4px 93.6px;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    top: 182px;
+    left: 275px;
+  }
+
+  @media (min-width: $min-desktop) {
+    top: 181px;
+    left: 281px;
+  }
+}
+
+.prepare__visual:active::before {
+  top: 44px;
+  left: 90px;
+  width: 81.6px;
+  height: 62.4px;
+  background-size: 81.6px 62.4px;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    top: 198px;
+    left: 294px;
+  }
+
+  @media (min-width: $min-desktop) {
+    top: 197px;
+    left: 300px;
   }
 }

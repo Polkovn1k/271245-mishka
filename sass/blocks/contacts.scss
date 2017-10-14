@@ -232,3 +232,12 @@
     }
   }
 }
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.contacts__type-email:hover {
+  color: $input-add;
+}
+
+.contacts__type-email:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-bottom: 1px solid rgba(70, 193, 174, 0.3);
+}

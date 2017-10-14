@@ -204,3 +204,11 @@
     background-position: 18px 11px;
   }
 }
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.comments__controls-direction:hover {
+  opacity: 0.6;
+}
+
+.comments__controls-direction:active {
+  opacity: 0.3;
+}

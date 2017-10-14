@@ -182,17 +182,26 @@
     width: 25px;
     min-height: 25px;
     font-size: 0px;
-    background: transparent url("../img/icon-cart.svg") 5px 1px no-repeat;
-    background-size: 21px 18px;
+  }
+
+  svg {
+    position: absolute;
+    top: 0px;
+    right: 27px;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     margin-top: auto;
+  }
 
-    a {
-      background-position: 1px 1px;
-      background-size: 21px 18px;
-    }
+  a {
+
+  }
+
+  svg {
+    position: absolute;
+    top: 0px;
+    right: 31px;
   }
 
   @media (min-width: $min-desktop) {
@@ -203,9 +212,14 @@
     padding-left: 21px;
 
     a {
-      background-position: 0px 1px;
-      background-size: 21px 18px;
+
     }
+
+    svg {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+  }
   }
 }
 /* -------------------------------------------------------------- */
@@ -249,4 +263,24 @@
     line-height: 24px;
     font-size: 17px;
   }
+}
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.product:hover .product__container {
+  box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1),
+              inset 0px 1px rgba(68, 68, 68, 0.1),
+              inset -1px 0px rgba(68, 68, 68, 0.1),
+              inset 1px 0px rgba(68, 68, 68, 0.1),
+              0px 4px 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+a .product__icon-cart {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+a:hover .product__icon-cart {
+  fill: $green-color;
+}
+
+a:active .product__icon-cart {
+  fill: rgba(99, 209, 187, 0.3);
 }

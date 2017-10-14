@@ -123,3 +123,15 @@
     width: 350px;
   }
 }
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.button:hover {
+  background: $grey-color;
+  border-color: $grey-color;
+  color: $add-color;
+}
+
+.button:active {
+  background: $grey-color;
+  border-color: $grey-color;
+  color: rgba(255, 255, 255, 0.3);
+}

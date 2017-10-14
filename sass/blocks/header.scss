@@ -57,7 +57,7 @@
   width: 86px;
   @include field-reset();
 
-  svg {
+  img {
     display: block;
     @include field-reset();
     width: 86px;
@@ -67,7 +67,7 @@
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 113px;
 
-    svg {
+    img {
       width: 113px;
       height: 46px;
     }
@@ -76,46 +76,10 @@
   @media (min-width: $min-desktop) {
     width: 149px;
 
-    svg {
+    img {
       width: 149px;
       height: 72px;
     }
-  }
-}
-/* -------------------------------------------------------------- */
-.header__logo-mobile {
-  display: block;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    display: none;
-  }
-
-  @media (min-width: $min-desktop) {
-    display: none;
-  }
-}
-/* -------------------------------------------------------------- */
-.header__logo-tablet {
-  display: none;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    display: block;
-  }
-
-  @media (min-width: $min-desktop) {
-    display: none;
-  }
-}
-/* -------------------------------------------------------------- */
-.header__logo-desktop {
-  display: none;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    display: none;
-  }
-
-  @media (min-width: $min-desktop) {
-    display: block;
   }
 }
 /* -------------------------------------------------------------- */
@@ -270,7 +234,6 @@
 /* -------------------------------------------------------------- */
 .header__nav-item--form {
 
-
   a {
 
   }
@@ -306,8 +269,13 @@
 .header__nav-item--search {
 
   a {
-    background: transparent url("../img/icon-search.svg") no-repeat top 32px left 32px;
-    background-size: 18px 19px;
+    position: relative;
+  }
+
+  svg {
+    position: absolute;
+    top: 31px;
+    left: 32px;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -318,10 +286,14 @@
       min-height: 88px;
       margin-top: -88px;
       font-size: 0px;
-      background: transparent url("../img/icon-search.svg") no-repeat top 36px left 33px;
-      background-size: 18px 19px;
       box-shadow: -1px 0px rgba(68, 68, 68, 0.1),
       inset -1px 0px rgba(68, 68, 68, 0.1);
+    }
+
+    svg {
+      position: absolute;
+      top: 36px;
+      left: 33px;
     }
   }
 
@@ -331,10 +303,14 @@
     a{
       width: 84px;
       font-size: 0px;
-      background: transparent url("../img/icon-search.svg") no-repeat top 36px left 33px;
-      background-size: 18px 19px;
       box-shadow: inset 1px 0px rgba(68, 68, 68, 0.1),
       inset -1px 0px rgba(68, 68, 68, 0.1);
+    }
+
+    svg {
+      position: absolute;
+      top: 36px;
+      left: 33px;
     }
   }
 }
@@ -342,15 +318,21 @@
 .header__nav-item--cart {
 
   a {
-    background: transparent url("../img/icon-cart.svg") no-repeat top 31px left 31px;
-    background-size: 21px 18px;
+    position: relative;
     box-shadow: inset 0px 1px 0px 0px $controls-bg,
     inset 0px -1px 0px 0px $controls-bg;
+  }
+
+  svg {
+    position: absolute;
+    top: 31px;
+    left: 31px;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     a{
+      position: relative;
       display: block;
       width: 264px;
       min-height: 88px;
@@ -361,9 +343,13 @@
       line-height: 24px;
       font-size: 17px;
       color: $main-color;
-      background: transparent url("../img/icon-cart.svg") no-repeat top 34px left 32px;
-      background-size: 21px 18px;
       box-shadow: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 34px;
+      left: 32px;
     }
   }
 
@@ -377,9 +363,13 @@
       font-size: 17px;
       color: $main-color;
       text-align: right;
-      background: transparent url("../img/icon-cart.svg") no-repeat top 34px left 32px;
-      background-size: 21px 18px;
       box-shadow: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 34px;
+      left: 32px;
     }
   }
 }
@@ -458,4 +448,35 @@
   @media (min-width: $min-desktop) {
     display: none;
   }
+}
+/* HOVER/ACTIVE/FOCUS=============================================== */
+.header__logo-link[href]:hover {
+  opacity: 0.6;
+}
+
+.header__logo-link[href]:active {
+  opacity: 0.3;
+}
+
+.header__nav-item a[href]:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header__nav-item a[href]:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a .header__icon-search,
+a .header__icon-cart {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+a:hover .header__icon-search,
+a:hover .header__icon-cart {
+  fill: $green-color;
+}
+
+a:active .header__icon-search,
+a:active .header__icon-cart {
+  fill: rgba(99, 209, 187, 0.3);
 }
