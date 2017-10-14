@@ -8,27 +8,27 @@
 
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__container {
   @include mobal-container();
-  box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1);
+  box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1);
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     @include flex-row();
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    padding: 0px;
+    padding: 0;
   }
 
   @media (min-width: $min-desktop) {
     position: relative;
     width: 100%;
-    padding: 0px;
-    box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1);
+    padding: 0;
+    box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1);
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__logo {
   padding-top: 22px;
   padding-bottom: 22px;
@@ -48,10 +48,10 @@
     top: 9px;
     left: 50%;
     margin-left: -75px;
-    padding: 0px;
+    padding: 0;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__logo-link {
   display: block;
   width: 86px;
@@ -82,7 +82,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav {
   position: relative;
   display: block;
@@ -91,19 +91,19 @@
     display: block;
     width: 100%;
     background: $table-bg;
-    box-shadow: inset 0px 1px rgba(68, 68, 68, 0.1);
+    box-shadow: inset 0 1px rgba(68, 68, 68, 0.1);
   }
 
   @media (min-width: $min-desktop) {
     position: static;
     display: block;
     width: 1050px;
-    margin: 0px auto;
+    margin: 0 auto;
     background: $add-color;
-    box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1);
+    box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1);
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav--catalog-bg {
 
 
@@ -115,7 +115,7 @@
 
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-list {
   @include flex-column();
   @include ul-reset();
@@ -127,8 +127,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 768px;
-    margin: 0px auto;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 0;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -137,11 +137,11 @@
     @include flex-row();
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-list--show {
   display: flex;
 
@@ -153,10 +153,10 @@
     display: flex;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-item {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 
   a {
     @include flex-column();
@@ -170,7 +170,7 @@
     font-size: 17px;
     color: $main-color;
     text-align: center;
-    box-shadow: inset 0px 1px 0px 0px $controls-bg;
+    box-shadow: inset 0 1px 0 0 $controls-bg;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -178,8 +178,8 @@
     a{
       display: inline;
       width: auto;
-      min-height: 0px;
-      padding-left: 0px;
+      min-height: 0;
+      padding-left: 0;
       text-align: left;
       box-shadow: none;
     }
@@ -190,14 +190,14 @@
     a{
       display: block;
       width: auto;
-      padding-left: 0px;
+      padding-left: 0;
       min-height: 88px;
       text-align: left;
       box-shadow: none;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-item--catalog {
 
   a {
@@ -219,11 +219,11 @@
 
   @media (min-width: $min-desktop) {
     width: 184px;
-    padding-top: 0px;
+    padding-top: 0;
 
     a{
       padding-top: 31px;
-      padding-left: 0px;
+      padding-left: 0;
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -231,9 +231,8 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
-.header__nav-item--form {
 
+.header__nav-item--form {
 
   a {
 
@@ -254,7 +253,7 @@
 
   @media (min-width: $min-desktop) {
     width: 210px;
-    padding-top: 0px;
+    padding-top: 0;
 
     a{
       padding-top: 31px;
@@ -262,16 +261,21 @@
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
-      box-shadow: inset 1px 0px rgba(68, 68, 68, 0.1);
+      box-shadow: inset 1px 0 rgba(68, 68, 68, 0.1);
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-item--search {
 
   a {
-    background: transparent url("../img/icon-search.svg") no-repeat top 32px left 32px;
-    background-size: 18px 19px;
+    position: relative;
+  }
+
+  svg {
+    position: absolute;
+    top: 31px;
+    left: 32px;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -281,11 +285,15 @@
       width: 83px;
       min-height: 88px;
       margin-top: -88px;
-      font-size: 0px;
-      background: transparent url("../img/icon-search.svg") no-repeat top 36px left 33px;
-      background-size: 18px 19px;
-      box-shadow: -1px 0px rgba(68, 68, 68, 0.1),
-      inset -1px 0px rgba(68, 68, 68, 0.1);
+      font-size: 0;
+      box-shadow: -1px 0 rgba(68, 68, 68, 0.1),
+      inset -1px 0 rgba(68, 68, 68, 0.1);
+    }
+
+    svg {
+      position: absolute;
+      top: 36px;
+      left: 33px;
     }
   }
 
@@ -294,27 +302,37 @@
 
     a{
       width: 84px;
-      font-size: 0px;
-      background: transparent url("../img/icon-search.svg") no-repeat top 36px left 33px;
-      background-size: 18px 19px;
-      box-shadow: inset 1px 0px rgba(68, 68, 68, 0.1),
-      inset -1px 0px rgba(68, 68, 68, 0.1);
+      font-size: 0;
+      box-shadow: inset 1px 0 rgba(68, 68, 68, 0.1),
+      inset -1px 0 rgba(68, 68, 68, 0.1);
+    }
+
+    svg {
+      position: absolute;
+      top: 36px;
+      left: 33px;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-item--cart {
 
   a {
-    background: transparent url("../img/icon-cart.svg") no-repeat top 31px left 31px;
-    background-size: 21px 18px;
-    box-shadow: inset 0px 1px 0px 0px $controls-bg,
-    inset 0px -1px 0px 0px $controls-bg;
+    position: relative;
+    box-shadow: inset 0 1px 0 0 $controls-bg,
+    inset 0 -1px 0 0 $controls-bg;
+  }
+
+  svg {
+    position: absolute;
+    top: 31px;
+    left: 31px;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     a{
+      position: relative;
       display: block;
       width: 264px;
       min-height: 88px;
@@ -325,9 +343,13 @@
       line-height: 24px;
       font-size: 17px;
       color: $main-color;
-      background: transparent url("../img/icon-cart.svg") no-repeat top 34px left 32px;
-      background-size: 21px 18px;
       box-shadow: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 34px;
+      left: 32px;
     }
   }
 
@@ -341,13 +363,17 @@
       font-size: 17px;
       color: $main-color;
       text-align: right;
-      background: transparent url("../img/icon-cart.svg") no-repeat top 34px left 32px;
-      background-size: 21px 18px;
       box-shadow: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 34px;
+      left: 32px;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__nav-toggle {
   position: absolute;
   z-index: 10;
@@ -356,7 +382,7 @@
   right: 30px;
   width: 21px;
   min-height: 20px;
-  font-size: 0px;
+  font-size: 0;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: none;
@@ -366,12 +392,12 @@
     display: none;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__toggle-open {
   display: block;
   width: 100%;
   min-height: 20px;
-  background: url("../img/icon-menu-open.svg") 0px 3px no-repeat;
+  background: url("../img/icon-menu-open.svg") 0 3px no-repeat;
   cursor: pointer;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -382,7 +408,7 @@
     display: none;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__toggle-open--hide {
   display: none;
 
@@ -394,7 +420,7 @@
     display: none;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__toggle-close {
   display: none;
   width: 100%;
@@ -410,7 +436,7 @@
     display: none;
   }
 }
-/* -------------------------------------------------------------- */
+
 .header__toggle-close--show {
   display: block;
 
@@ -422,4 +448,35 @@
   @media (min-width: $min-desktop) {
     display: none;
   }
+}
+
+.header__logo-link[href]:hover {
+  opacity: 0.6;
+}
+
+.header__logo-link[href]:active {
+  opacity: 0.3;
+}
+
+.header__nav-item a[href]:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header__nav-item a[href]:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a .header__icon-search,
+a .header__icon-cart {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+a:hover .header__icon-search,
+a:hover .header__icon-cart {
+  fill: $green-color;
+}
+
+a:active .header__icon-search,
+a:active .header__icon-cart {
+  fill: rgba(99, 209, 187, 0.3);
 }

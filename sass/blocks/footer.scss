@@ -9,7 +9,7 @@
 
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__container {
   @include mobal-container();
   padding-top: 24px;
@@ -41,7 +41,7 @@
     padding-left: 100px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__logo {
   display: none;
 
@@ -53,17 +53,17 @@
     display: block;
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__logo-link {
 
-  img {
+  svg {
 
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: block;
 
-    img {
+    svg {
       width: 102px;
       height: 34px;
     }
@@ -72,13 +72,13 @@
   @media (min-width: $min-desktop) {
     display: block;
 
-    img {
+    svg {
       width: 102px;
       height: 34px;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__developers {
   @include flex-row();
   justify-content: center;
@@ -98,9 +98,7 @@
     display: block;
     width: 27px;
     height: 34px;
-    font-size: 0px;
-    background: transparent url("../img/logo-htmlacademy.svg") no-repeat;
-    background-size: 27px 34px;
+    font-size: 0;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -126,4 +124,28 @@
 
     }
   }
+}
+
+a .footer__logo-footer {
+  fill: $main-color;
+}
+
+a:hover .footer__logo-footer {
+  fill: $input-add;
+}
+
+a:active .footer__logo-footer {
+  fill: rgba(70, 193, 174, 0.3);
+}
+
+a .footer__logo-htmlacademy {
+  fill: $green-color;
+}
+
+a:hover .footer__logo-htmlacademy {
+  fill: $input-add;
+}
+
+a:active .footer__logo-htmlacademy {
+  fill: rgba(70, 193, 174, 0.3);
 }

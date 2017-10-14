@@ -9,10 +9,10 @@
     background: $table-bg;
   }
 }
-/* -------------------------------------------------------------- */
+
 .view__container {
   @include mobal-container();
-  padding: 0px;
+  padding: 0;
   padding-top: 53px;
   background: $table-bg url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 
@@ -35,16 +35,16 @@
   @media (min-width: $min-desktop) {
     position: relative;
     width: 100%;
-    background: $table-bg url("../img/hero-desktop@1x.jpg") no-repeat center 0px;
+    background: $table-bg url("../img/hero-desktop@1x.jpg") no-repeat center 0;
     background-size: 1250px 746px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: $table-bg url("../img/hero-desktop@2x.jpg") no-repeat center 0px;
+      background: $table-bg url("../img/hero-desktop@2x.jpg") no-repeat center 0;
       background-size: 1250px 746px;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .view__container::after {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -54,7 +54,7 @@
     bottom: -17px;
     width: 100%;
     min-height: 34px;
-    background: transparent url("../img/bg-zigzag-fill.svg") 0px 5px repeat-x;
+    background: transparent url("../img/bg-zigzag-fill.svg") 0 5px repeat-x;
     background-size: 768px 24px;
   }
 
@@ -65,11 +65,11 @@
     bottom: -17px;
     width: 100%;
     min-height: 34px;
-    background: transparent url("../img/bg-zigzag-fill.svg") 0px 0px repeat-x;
+    background: transparent url("../img/bg-zigzag-fill.svg") 0 0 repeat-x;
     background-size: 1150px 34px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .view__title {
   @include field-reset();
   padding-top: 18px;
@@ -86,7 +86,7 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 600px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 372px;
     line-height: 50px;
@@ -99,7 +99,7 @@
 
   @media (min-width: $min-desktop) {
     width: 670px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 360px;
     line-height: 57px;
@@ -110,7 +110,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .view__list {
   width: 100%;
   @include ul-reset();
@@ -119,35 +119,37 @@
     @include flex-row();
     flex-wrap: nowrap;
     width: 668px;
-    margin: 0px auto;
+    margin: 0 auto;
   }
 
   @media (min-width: $min-desktop) {
     @include flex-row();
     flex-wrap: nowrap;
     width: 1050px;
-    margin: 0px auto;
+    margin: 0 auto;
   }
 }
-/* -------------------------------------------------------------- */
+
 .view__item {
   width: 100%;
   @include field-reset();
 
   a {
-    display: block;
+    @include flex-row();
+    flex-wrap: nowrap;
+    justify-content: space-between;
     width: 100%;
     @include field-reset();
-    padding-top: 26px;
-    padding-right: 125px;
-    padding-bottom: 29px;
+    padding-top: 23px;
+    padding-right: 36px;
+    padding-bottom: 19px;
     padding-left: 29px;
     @include font-bold()
     line-height: 24px;
     font-size: 19px;
     color: $add-color;
-    background: $green-color url("../img/icon-interior.svg") right 36px top 23px no-repeat;
-    background-size: 41px 62px;
+    background: $green-color;
+
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -155,12 +157,10 @@
 
     a {
       min-height: 119px;
-      padding-top: 28px;
+      padding-top: 29px;
       padding-left: 35px;
       line-height: 30px;
       font-size: 20px;
-      background-position: right 37px top 28px;
-      background-size: 41px 62px;
     }
   }
 
@@ -170,36 +170,62 @@
     a {
       min-height: 119px;
       padding-top: 28px;
-      padding-right: 320px;
+      padding-right: 35px;
       padding-left: 35px;
       line-height: 30px;
       font-size: 20px;
-      background-position: right 37px top 28px;
-      background-size: 41px 62px;
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .view__item--darkness {
 
   a {
-    background: $green-color--dark url("../img/icon-toy.svg") right 26px top 20px no-repeat;
-    background-size: 60px 61px;
+    padding-right: 28px;
+    background: $green-color--dark;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
 
     a {
-      background-position: right 35px top 31px;
-      background-size: 60px 61px;
+      padding-right: 34px;
     }
   }
 
   @media (min-width: $min-desktop) {
 
     a {
-      background-position: right 35px top 31px;
-      background-size: 60px 61px;
+      padding-right: 35px;
     }
+  }
+}
+
+a .view__icon-interior,
+a .view__icon-toy {
+  fill: rgba(20, 144, 128, 0.5);
+}
+
+a:hover .view__icon-interior,
+a:hover .view__icon-toy {
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+a:active .view__icon-interior,
+a:active .view__icon-toy {
+  fill: rgba(20, 144, 128, 0.3);
+}
+
+.view__item a:hover {
+  padding-top: 18px;
+  padding-bottom: 24px;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    min-height: 124px;
+    padding-top: 23px;
+  }
+
+  @media (min-width: $min-desktop) {
+    min-height: 124px;
+    padding-top: 23px;
   }
 }
