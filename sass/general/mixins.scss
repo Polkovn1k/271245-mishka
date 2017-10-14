@@ -1,38 +1,35 @@
-/* GRID mix ------------------------------------------------ */
-@mixin field-reset() {                    //@include field-reset();
-  margin: 0px;
-  padding: 0px;
+@mixin field-reset() {
+  margin: 0;
+  padding: 0;
 }
 
-@mixin ul-reset() {                       //@include ul-reset();
-  margin: 0px;
-  padding: 0px;
+@mixin ul-reset() {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
-@mixin mobal-container() {                //@include mobal-container();
+@mixin mobal-container() {
   width: 320px;
   margin: 0 auto;
 }
 
-/* FLEX mix ------------------------------------------------ */
-@mixin flex-row() {                       //@include flex-row();
+@mixin flex-row() {
   display: flex;
   flex-direction: row;
 }
 
-@mixin flex-column() {                    //@include flex-column();
+@mixin flex-column() {
   display: flex;
   flex-direction: column;
 }
 
-/* FONTS mix ------------------------------------------------ */
-@mixin font-regular() {                   //@include font-regular();
+@mixin font-regular() {
   font-family: "Open Sans";
   font-weight: 400;
 }
 
-@mixin font-bold() {                      //@include font-bold();
+@mixin font-bold() {
   font-family: "Open Sans";
   font-weight: 700;
 }
