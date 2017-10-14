@@ -1,35 +1,38 @@
-@mixin field-reset() {
-  margin: 0;
-  padding: 0;
+/* GRID mix ------------------------------------------------ */
+@mixin field-reset() {                    //@include field-reset();
+  margin: 0px;
+  padding: 0px;
 }
 
-@mixin ul-reset() {
-  margin: 0;
-  padding: 0;
+@mixin ul-reset() {                       //@include ul-reset();
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
 }
 
-@mixin mobal-container() {
+@mixin mobal-container() {                //@include mobal-container();
   width: 320px;
   margin: 0 auto;
 }
 
-@mixin flex-row() {
+/* FLEX mix ------------------------------------------------ */
+@mixin flex-row() {                       //@include flex-row();
   display: flex;
   flex-direction: row;
 }
 
-@mixin flex-column() {
+@mixin flex-column() {                    //@include flex-column();
   display: flex;
   flex-direction: column;
 }
 
-@mixin font-regular() {
+/* FONTS mix ------------------------------------------------ */
+@mixin font-regular() {                   //@include font-regular();
   font-family: "Open Sans";
   font-weight: 400;
 }
 
-@mixin font-bold() {
+@mixin font-bold() {                      //@include font-bold();
   font-family: "Open Sans";
   font-weight: 700;
 }

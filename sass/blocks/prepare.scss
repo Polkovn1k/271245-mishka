@@ -3,7 +3,7 @@
   padding-bottom: 58px;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    padding-top: 0;
+    padding-top: 0px;
     padding-bottom: 63px;
   }
 
@@ -12,15 +12,15 @@
     padding-bottom: 105px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .prepare__container {
   width: 260px;
-  margin: 0 auto;
+  margin: 0px auto;
   padding-bottom: 33px;
-  box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1),
-              inset 0 1px rgba(68, 68, 68, 0.1),
-              inset -1px 0 rgba(68, 68, 68, 0.1),
-              inset 1px 0 rgba(68, 68, 68, 0.1);
+  box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1),
+              inset 0px 1px rgba(68, 68, 68, 0.1),
+              inset -1px 0px rgba(68, 68, 68, 0.1),
+              inset 1px 0px rgba(68, 68, 68, 0.1);
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     @include flex-column();
@@ -39,11 +39,11 @@
     justify-content: flex-start;
   }
 }
-
+/* -------------------------------------------------------------- */
 .prepare__title {
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 90px;
@@ -70,7 +70,7 @@
     font-size: 20px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .prepare__title::before {
   content: "";
   position: absolute;
@@ -93,7 +93,7 @@
     right: 253px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .prepare__visual {
   position: relative;
   padding-bottom: 23px;
@@ -112,14 +112,14 @@
       width: 668px;
       height: 455px;
       max-width: none;
-      box-shadow: 0 1px rgba(68, 68, 68, 0.1);
+      box-shadow: 0px 1px rgba(68, 68, 68, 0.1);
     }
   }
 
   @media (min-width: $min-desktop) {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 682px;
     min-height: 455px;
 
@@ -130,7 +130,7 @@
     }
   }
 }
-
+/* -------------------------------------------------------------- */
 .prepare__visual::before {
   content: "";
   position: absolute;
@@ -152,10 +152,10 @@
     left: 291px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .prepare__text {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   padding-right: 40px;
   padding-bottom: 25px;
   padding-left: 34px;
@@ -180,7 +180,7 @@
     font-size: 15px;
   }
 }
-
+/* HOVER/ACTIVE/FOCUS=============================================== */
 .prepare__visual:hover::before {
   top: 28px;
   left: 70px;
