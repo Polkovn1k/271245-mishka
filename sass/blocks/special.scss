@@ -9,7 +9,7 @@
 
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__container {
   @include mobal-container();
   padding-top: 27px;
@@ -47,7 +47,7 @@
     background-size: 1050px 23px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__title {
   @include field-reset();
   padding-bottom: 6px;
@@ -72,7 +72,7 @@
     letter-spacing: -0.3px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__title-add {
   display: block;
   padding-bottom: 22px;
@@ -88,7 +88,7 @@
     right: 50px;
     width: 126px;
     padding-top: 12px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
     line-height: 17px;
     font-size: 17px;
     color: $green-color;
@@ -106,9 +106,9 @@
     text-align: center;
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__text {
-  margin: 0;
+  margin: 0px;
   padding-bottom: 16px;
   @include font-regular();
   line-height: 24px;
@@ -127,10 +127,10 @@
     padding-bottom: 48px;
     line-height: 30px;
     font-size: 17px;
-    letter-spacing: 0;
+    letter-spacing: 0px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__property {
   width: 100%;
   @include font-regular();
@@ -190,7 +190,7 @@
     }
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__visual {
   padding-top: 27px;
   padding-bottom: 25px;
@@ -218,7 +218,7 @@
   @media (min-width: $min-desktop) {
     position: absolute;
     top: 44px;
-    right: 0;
+    right: 0px;
     z-index: 1;
 
     img {
@@ -229,7 +229,7 @@
     }
   }
 }
-
+/* -------------------------------------------------------------- */
 .special__price {
   display: block;
   padding-bottom: 25px;

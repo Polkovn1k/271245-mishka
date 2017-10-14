@@ -15,7 +15,7 @@
   @media (min-width: $min-desktop) {
     position: absolute;
     z-index: 10;
-    top: 0;
+    top: 0px;
     left: 50%;
     @include flex-row();
     flex-wrap: nowrap;
@@ -26,7 +26,7 @@
     background: transparent;
   }
 }
-
+/* -------------------------------------------------------------- */
 .product-info__new {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -43,7 +43,7 @@
     letter-spacing: 0.6px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .product-info__sale {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -61,7 +61,7 @@
     letter-spacing: 0.2px;
   }
 }
-
+/* -------------------------------------------------------------- */
 .product-info__delivery {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -85,7 +85,7 @@
     color: $grey-color;
   }
 }
-
+/* HOVER/ACTIVE/FOCUS=============================================== */
 .product-info__new[href]:hover,
 .product-info__sale[href]:hover {
   opacity: 0.6;
