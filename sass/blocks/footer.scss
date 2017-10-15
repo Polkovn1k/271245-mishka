@@ -1,15 +1,7 @@
 .footer {
   background: $footer-bg;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-  }
-
-  @media (min-width: $min-desktop) {
-
-  }
 }
-/* -------------------------------------------------------------- */
+
 .footer__container {
   @include mobal-container();
   padding-top: 24px;
@@ -41,7 +33,7 @@
     padding-left: 100px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__logo {
   display: none;
 
@@ -53,12 +45,8 @@
     display: block;
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__logo-link {
-
-  svg {
-
-  }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     display: block;
@@ -78,7 +66,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .footer__developers {
   @include flex-row();
   justify-content: center;
@@ -98,7 +86,7 @@
     display: block;
     width: 27px;
     height: 34px;
-    font-size: 0px;
+    font-size: 0;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -106,10 +94,6 @@
 
     span {
       padding-right: 30px;
-    }
-
-    a {
-
     }
   }
 
@@ -119,13 +103,9 @@
     span {
       padding-right: 30px;
     }
-
-    a {
-
-    }
   }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 a .footer__logo-footer {
   fill: $main-color;
 }

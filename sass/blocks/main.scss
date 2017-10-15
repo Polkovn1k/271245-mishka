@@ -6,26 +6,11 @@
 
   @media (min-width: $min-desktop) {
     position: relative;
-    box-shadow: inset 0px 1px rgba(68, 68, 68, 0.1);
+    box-shadow: inset 0 1px rgba(68, 68, 68, 0.1);
   }
 }
-/* -------------------------------------------------------------- */
-.main__catalog {
 
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-  }
-
-  @media (min-width: $min-desktop) {
-
-  }
-}
-/* -------------------------------------------------------------- */
 .main__catalog-container {
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-  }
 
   @media (min-width: $min-desktop) {
     @include flex-row();
@@ -33,7 +18,7 @@
     justify-content: space-between;
     align-content: flex-start;
     width: 1250px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-right: 100px;
     padding-left: 100px;
   }

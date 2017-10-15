@@ -3,14 +3,14 @@
   @include flex-row();
   flex-wrap: nowrap;
   width: 150px;
-  margin: 0px auto;
-  padding: 0px;
+  margin: 0 auto;
+  padding: 0;
   list-style-type: none;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: static;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0;
     padding-top: 5px;
     padding-left: 41px;
   }
@@ -18,12 +18,12 @@
   @media (min-width: $min-desktop) {
     position: static;
     justify-content: space-between;
-    margin: 0px;
+    margin: 0;
     padding-top: 5px;
     padding-left: 41px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .social::before {
   content: "";
   position: absolute;
@@ -42,7 +42,7 @@
     display: none;
   }
 }
-/* -------------------------------------------------------------- */
+
 .social__item {
   min-height: 31px;
   min-width: 32px;
@@ -52,24 +52,10 @@
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 0px;
-  }
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-    a {
-
-    }
-  }
-
-  @media (min-width: $min-desktop) {
-
-    a {
-
-    }
+    font-size: 0;
   }
 }
-/* -------------------------------------------------------------- */
+
 .social__item--insta {
   padding-top: 6px;
   padding-right: 42px;
@@ -81,67 +67,29 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-right: 63px;
-
-    a {
-
-    }
   }
 
   @media (min-width: $min-desktop) {
     padding-right: 63px;
-
-    a {
-
-    }
   }
 }
-/* -------------------------------------------------------------- */
+
 .social__item--facebook {
   padding-right: 37px;
 
-  a {
-
-  }
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-right: 55px;
-
-    a {
-
-    }
   }
 
   @media (min-width: $min-desktop) {
     padding-right: 55px;
-
-    a {
-
-    }
   }
 }
-/* -------------------------------------------------------------- */
+
 .social__item--twitter {
   padding-top: 5px;
-
-  a {
-
-  }
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-    a {
-
-    }
-  }
-
-  @media (min-width: $min-desktop) {
-
-    a {
-
-    }
-  }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 a .social__icon-insta,
 a .social__icon-fb,
 a .social__icon-twitter {
