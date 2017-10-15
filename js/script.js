@@ -3,6 +3,7 @@ var menuOpen = document.querySelector(".header__toggle-open");
 var menu =  document.querySelector(".header__nav-list");
 var menuClose = document.querySelector(".header__toggle-close");
 
+menu.classList.remove('header__nav-list--nojs');
 
 menuOpen.addEventListener("click", function(event) {
   event.preventDefault();
