@@ -3,6 +3,7 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
+
     @include flex-row();
     flex-wrap: nowrap;
     justify-content: flex-end;
@@ -17,6 +18,7 @@
     z-index: 10;
     top: 0;
     left: 50%;
+
     @include flex-row();
     flex-wrap: nowrap;
     width: 1250px;
@@ -54,6 +56,7 @@
     display: block;
     margin-left: 58px;
     padding-top: 18px;
+
     @include font-bold();
     line-height: 24px;
     font-size: 15px;
@@ -69,6 +72,7 @@
     width: 384px;
     padding-top: 14px;
     padding-right: 49px;
+
     @include font-regular();
     line-height: 24px;
     font-size: 15px;
@@ -79,6 +83,7 @@
   @media (min-width: $min-desktop) {
     margin-left: auto;
     padding-top: 18px;
+
     @include font-regular();
     line-height: 24px;
     font-size: 15px;

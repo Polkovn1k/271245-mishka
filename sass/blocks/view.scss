@@ -74,6 +74,7 @@
   @include field-reset();
   padding-top: 18px;
   padding-bottom: 122px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 27px;
@@ -113,6 +114,7 @@
 
 .view__list {
   width: 100%;
+
   @include ul-reset();
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -133,19 +135,23 @@
 .view__item {
   position: relative;
   width: 100%;
+
   @include field-reset();
 
   a {
     position: relative;
+
     @include flex-row();
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+
     @include field-reset();
     padding-top: 23px;
     padding-right: 36px;
     padding-bottom: 19px;
     padding-left: 29px;
+
     @include font-bold()
     line-height: 24px;
     font-size: 19px;

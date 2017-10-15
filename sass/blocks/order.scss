@@ -1,5 +1,6 @@
 .order {
   margin: 0;
+
   @include mobal-container();
   padding: 0;
   padding-right: 30px;
@@ -23,6 +24,7 @@
   margin: 0;
   padding-top: 22px;
   padding-bottom: 23px;
+
   @include font-regular();
   line-height: 24px;
   font-size: 13px;
@@ -31,6 +33,7 @@
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-top: 75px;
     padding-bottom: 73px;
+
     @include font-regular();
     line-height: 30px;
     font-size: 17px;
@@ -40,6 +43,7 @@
   @media (min-width: $min-desktop) {
     padding-top: 120px;
     padding-bottom: 73px;
+
     @include font-regular();
     line-height: 30px;
     font-size: 17px;

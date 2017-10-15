@@ -9,6 +9,7 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: relative;
+
     @include flex-column();
     align-items: flex-start;
     flex-wrap: wrap;
@@ -23,6 +24,7 @@
 
   @media (min-width: $min-desktop) {
     position: relative;
+
     @include flex-column();
     align-items: flex-start;
     flex-wrap: wrap;
@@ -39,6 +41,7 @@
 .special__title {
   @include field-reset();
   padding-bottom: 6px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 25px;
@@ -64,6 +67,7 @@
 .special__title-add {
   display: block;
   padding-bottom: 22px;
+
   @include font-bold();
   text-transform: uppercase;
   line-height: 20px;
@@ -98,6 +102,7 @@
 .special__text {
   margin: 0;
   padding-bottom: 16px;
+
   @include font-regular();
   line-height: 24px;
   font-size: 15px;
@@ -121,6 +126,7 @@
 
 .special__property {
   width: 100%;
+
   @include font-regular();
   line-height: 24px;
   font-size: 15px;
@@ -213,6 +219,7 @@
 .special__price {
   display: block;
   padding-bottom: 25px;
+
   @include font-bold();
   line-height: 24px;
   font-size: 17px;

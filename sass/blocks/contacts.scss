@@ -19,6 +19,7 @@
 
 .contacts__container {
   @include flex-column();
+
   @include mobal-container();
   padding: 0;
   padding-top: 35px;
@@ -48,10 +49,12 @@
 
 .contacts__title {
   order: 1;
+
   @include field-reset();
   padding-right: 30px;
   padding-bottom: 26px;
   padding-left: 30px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 18px;
@@ -109,11 +112,14 @@
 
 .contacts__text {
   order: 2;
+
   @include flex-row();
+
   @include field-reset();
   padding-right: 30px;
   padding-bottom: 29px;
   padding-left: 30px;
+
   @include font-regular();
   line-height: 30px;
   font-size: 15px;

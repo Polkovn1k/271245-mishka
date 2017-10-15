@@ -23,6 +23,7 @@
 .about-us__title {
   @include field-reset();
   padding-bottom: 26px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 25px;
@@ -44,6 +45,7 @@
 .about-us__list {
   @include flex-column();
   width: 100%;
+
   @include ul-reset();
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -62,9 +64,11 @@
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
+
   @include field-reset();
   padding-top: 60px;
   padding-bottom: 23px;
+
   @include font-bold();
   line-height: 20px;
   font-size: 17px;

@@ -34,6 +34,7 @@
     position: relative;
     width: 1050px;
     min-height: 455px;
+
     @include flex-column();
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -47,6 +48,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 90px;
+
   @include font-bold();
   line-height: 24px;
   font-size: 17px;
@@ -159,6 +161,7 @@
   padding-right: 40px;
   padding-bottom: 25px;
   padding-left: 34px;
+
   @include font-regular();
   line-height: 24px;
   font-size: 13px;

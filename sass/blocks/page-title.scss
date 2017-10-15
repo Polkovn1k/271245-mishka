@@ -3,6 +3,7 @@
   padding: 0;
   padding-top: 71px;
   padding-bottom: 76px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 27px;
@@ -11,6 +12,7 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-top: 54px;
+
     @include font-bold();
     line-height: 50px;
     font-size: 43px;
@@ -22,6 +24,7 @@
     width: 100%;
     padding-top: 96px;
     padding-bottom: 103px;
+
     @include font-bold();
     line-height: 57px;
     font-size: 53px;

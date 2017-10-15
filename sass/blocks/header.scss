@@ -44,10 +44,12 @@
 .header__logo-link {
   display: block;
   width: 86px;
+
   @include field-reset();
 
   img {
     display: block;
+
     @include field-reset();
     width: 86px;
     height: 35px;
@@ -102,6 +104,7 @@
 
 .header__nav-list {
   @include flex-column();
+
   @include ul-reset();
   flex-wrap: nowrap;
   display: none;
@@ -148,6 +151,7 @@
     width: 100%;
     min-height: 79px;
     padding-left: 75px;
+
     @include font-bold();
     line-height: 24px;
     font-size: 17px;
@@ -203,6 +207,7 @@
     a{
       padding-top: 31px;
       padding-left: 0;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -233,6 +238,7 @@
     a{
       padding-top: 31px;
       padding-left: 35px;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -314,6 +320,7 @@
       margin-top: -88px;
       padding-top: 31px;
       padding-left: 82px;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -333,6 +340,7 @@
     a{
       width: 266px;
       padding-top: 31px;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
