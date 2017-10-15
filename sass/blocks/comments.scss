@@ -17,13 +17,11 @@
     padding-right: 50px;
     padding-bottom: 100px;
     padding-left: 50px;
-    background: url("../img/review@1x.jpg") 0 0 no-repeat,
-                url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background: url("../img/review@1x.jpg") 0 0 no-repeat, url("../img/bg-zigzag-line.svg") bottom repeat-x;
     background-size: 350px auto, 768px 17px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/review@2x.jpg") 0 0 no-repeat,
-                  url("../img/bg-zigzag-line.svg") bottom repeat-x;
+      background: url("../img/review@2x.jpg") 0 0 no-repeat, url("../img/bg-zigzag-line.svg") bottom repeat-x;
       background-size: 350px auto, 768px 17px;
     }
   }
@@ -38,13 +36,11 @@
     padding-right: 0;
     padding-bottom: 154px;
     padding-left: 175px;
-    background: url("../img/review@1x.jpg") 0 56px no-repeat,
-                url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background: url("../img/review@1x.jpg") 0 56px no-repeat, url("../img/bg-zigzag-line.svg") bottom repeat-x;
     background-size: 350px auto, 1050px 23px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../img/review@2x.jpg") 0 56px no-repeat,
-                  url("../img/bg-zigzag-line.svg") bottom repeat-x;
+      background: url("../img/review@2x.jpg") 0 56px no-repeat, url("../img/bg-zigzag-line.svg") bottom repeat-x;
       background-size: 350px auto, 1050px 23px;
     }
   }
