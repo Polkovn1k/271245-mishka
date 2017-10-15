@@ -217,7 +217,7 @@ a:active .view__icon-toy {
 
 .view__item a:hover {
   padding-top: 18px;
-  padding-bottom: 24px;
+  min-height: 106px;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     min-height: 124px;
