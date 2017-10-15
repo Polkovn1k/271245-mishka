@@ -23,7 +23,6 @@
     padding-left: 41px;
   }
 }
-
 .social::before {
   content: "";
   position: absolute;
@@ -42,12 +41,10 @@
     display: none;
   }
 }
-
 .social__item {
   min-height: 31px;
   min-width: 32px;
   @include field-reset();
-
   a {
     display: block;
     width: 100%;
@@ -55,12 +52,10 @@
     font-size: 0;
   }
 }
-
 .social__item--insta {
   padding-top: 6px;
   padding-right: 42px;
   padding-left: 2px;
-
   a {
     background: transparent;
   }
@@ -73,7 +68,6 @@
     padding-right: 63px;
   }
 }
-
 .social__item--facebook {
   padding-right: 37px;
 
@@ -85,23 +79,19 @@
     padding-right: 55px;
   }
 }
-
 .social__item--twitter {
   padding-top: 5px;
 }
-
 a .social__icon-insta,
 a .social__icon-fb,
 a .social__icon-twitter {
   fill: $main-color;
 }
-
 a:hover .social__icon-insta,
 a:hover .social__icon-fb,
 a:hover .social__icon-twitter {
   fill: $input-add;
 }
-
 a:active .social__icon-insta,
 a:active .social__icon-fb,
 a:active .social__icon-twitter {

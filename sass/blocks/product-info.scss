@@ -26,7 +26,6 @@
     background: transparent;
   }
 }
-
 .product-info__new {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -43,7 +42,6 @@
     letter-spacing: 0.6px;
   }
 }
-
 .product-info__sale {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -61,7 +59,6 @@
     letter-spacing: 0.2px;
   }
 }
-
 .product-info__delivery {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -85,12 +82,10 @@
     color: $grey-color;
   }
 }
-
 .product-info__new[href]:hover,
 .product-info__sale[href]:hover {
   opacity: 0.6;
 }
-
 .product-info__new[href]:active,
 .product-info__sale[href]:active {
   opacity: 0.3;

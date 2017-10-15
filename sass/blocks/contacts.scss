@@ -16,7 +16,6 @@
     padding-bottom: 66px;
   }
 }
-
 .contacts__container {
   @include flex-column();
   @include mobal-container();
@@ -45,7 +44,6 @@
     padding-left: 271px;
   }
 }
-
 .contacts__title {
   order: 1;
   @include field-reset();
@@ -79,7 +77,6 @@
     letter-spacing: -0.4px;
   }
 }
-
 .contacts__title::before {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -106,7 +103,6 @@
     background-size: 47px 81px;
   }
 }
-
 .contacts__text {
   order: 2;
   @include flex-row()
@@ -133,12 +129,10 @@
     font-size: 17px;
   }
 }
-
 .contacts__text--last {
   order: 3;
   padding-bottom: 0;
 }
-
 .contacts__type {
   display: block;
   width: 75px;
@@ -147,7 +141,6 @@
     width: 79px;
   }
 }
-
 .contacts__type-email {
   display: block;
   width: 185px;
@@ -163,11 +156,9 @@
     line-height: 29px;
   }
 }
-
 .contacts__type-address {
   display: block;
   width: 150px;
-
   span {
     display: block;
   }
@@ -181,7 +172,6 @@
     line-height: 30px;
   }
 }
-
 .contacts__map {
   width: 100%;
   padding-bottom: 35px;
@@ -192,7 +182,6 @@
     background: transparent url("../img/map-mobile@2x.jpg") no-repeat top center;
     background-size: 320px auto;
   }
-
   iframe {
     width: 100%;
     min-height: 457px;
@@ -208,7 +197,6 @@
       background: transparent url("../img/map-tablet@2x.jpg") no-repeat top center;
       background-size: 768px auto;
     }
-
     iframe {
       width: 100%;
       min-height: 457px;
@@ -226,18 +214,15 @@
       background: transparent url("../img/map-desktop@2x.jpg") no-repeat top 71px right 0;
       background-size: 525px auto;
     }
-
     iframe {
       width: 525px;
       min-height: 457px;
     }
   }
 }
-
 .contacts__type-email:hover {
   color: $input-add;
 }
-
 .contacts__type-email:active {
   color: rgba(70, 193, 174, 0.3);
   border-bottom: 1px solid rgba(70, 193, 174, 0.3);

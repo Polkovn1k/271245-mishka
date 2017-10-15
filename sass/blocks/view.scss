@@ -1,3 +1,14 @@
+.view {
+  background: $table-bg;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    background: transparent;
+  }
+
+  @media (min-width: $min-desktop) {
+    background: transparent;
+  }
+}
 .view__container {
   @include mobal-container();
   padding: 0;
@@ -32,7 +43,6 @@
     }
   }
 }
-
 .view__container::after {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -57,7 +67,6 @@
     background-size: 1150px 34px;
   }
 }
-
 .view__title {
   @include field-reset();
   padding-top: 18px;
@@ -67,7 +76,6 @@
   font-size: 27px;
   text-align: center;
   letter-spacing: 0.2px;
-
   span {
     display: block;
   }
@@ -79,7 +87,6 @@
     padding-bottom: 372px;
     line-height: 50px;
     font-size: 43px;
-
     span {
       display: inline;
     }
@@ -92,13 +99,11 @@
     padding-bottom: 360px;
     line-height: 57px;
     font-size: 53px;
-
     span {
       display: inline;
     }
   }
 }
-
 .view__list {
   width: 100%;
   @include ul-reset();
@@ -117,12 +122,12 @@
     margin: 0 auto;
   }
 }
-
 .view__item {
+  position: relative;
   width: 100%;
   @include field-reset();
-
   a {
+    position: relative;
     @include flex-row();
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -137,12 +142,24 @@
     font-size: 19px;
     color: $add-color;
     background: $green-color;
-
+  }
+  a:hover {
+    padding-top: 18px;
+    padding-bottom: 24px;
+  }
+  a:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    left: 0px;
+    height: 5px;
+    background: $green-color;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 50%;
-
     a {
       min-height: 119px;
       padding-top: 29px;
@@ -150,11 +167,23 @@
       line-height: 30px;
       font-size: 20px;
     }
+    a:hover {
+      padding-top: 23px;
+    }
+    a:hover::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0px;
+      left: 0px;
+      height: 5px;
+      background: $green-color;
+    }
   }
 
   @media (min-width: $min-desktop) {
     width: 50%;
-
     a {
       min-height: 119px;
       padding-top: 28px;
@@ -163,57 +192,51 @@
       line-height: 30px;
       font-size: 20px;
     }
+    a:hover {
+      padding-top: 23px;
+    }
+    a:hover::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0px;
+      left: 0px;
+      height: 5px;
+      background: $green-color;
+    }
   }
 }
-
 .view__item--darkness {
-
   a {
     padding-right: 28px;
     background: $green-color--dark;
   }
+  a:hover::before {
+    background: $green-color--dark;
+  }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
     a {
       padding-right: 34px;
     }
   }
 
   @media (min-width: $min-desktop) {
-
     a {
       padding-right: 35px;
     }
   }
 }
-
 a .view__icon-interior,
 a .view__icon-toy {
   fill: rgba(20, 144, 128, 0.5);
 }
-
 a:hover .view__icon-interior,
 a:hover .view__icon-toy {
   fill: rgba(20, 144, 128, 0.7);
 }
-
 a:active .view__icon-interior,
 a:active .view__icon-toy {
   fill: rgba(20, 144, 128, 0.3);
-}
-
-.view__item a:hover {
-  padding-top: 18px;
-  min-height: 106px;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    min-height: 124px;
-    padding-top: 23px;
-  }
-
-  @media (min-width: $min-desktop) {
-    min-height: 124px;
-    padding-top: 23px;
-  }
 }

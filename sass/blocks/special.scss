@@ -35,7 +35,6 @@
     background-size: 1050px 23px;
   }
 }
-
 .special__title {
   @include field-reset();
   padding-bottom: 6px;
@@ -60,7 +59,6 @@
     letter-spacing: -0.3px;
   }
 }
-
 .special__title-add {
   display: block;
   padding-bottom: 22px;
@@ -94,7 +92,6 @@
     text-align: center;
   }
 }
-
 .special__text {
   margin: 0;
   padding-bottom: 16px;
@@ -118,7 +115,6 @@
     letter-spacing: 0;
   }
 }
-
 .special__property {
   width: 100%;
   @include font-regular();
@@ -126,17 +122,14 @@
   font-size: 15px;
   color: $grey-color;
   border-collapse: collapse;
-
   tr {
     border-bottom: 1px solid $controls-bg;
   }
-
   td {
     padding-top: 8px;
     padding-bottom: 8px;
     border-bottom: 1px solid $controls-bg;
   }
-
   td:first-child {
     width: 95px;
   }
@@ -145,12 +138,10 @@
     width: 295px;
     line-height: 20px;
     font-size: 15px;
-
     td {
       padding-top: 9px;
       padding-bottom: 10px;
     }
-
     td:first-child {
 
     }
@@ -158,13 +149,11 @@
 
   @media (min-width: $min-desktop) {
     width: 295px;
-
     td {
       padding-top: 6px;
       padding-bottom: 10px;
       border-bottom: 1px solid $controls-bg;
     }
-
     td:first-child {
       width: 97px;
     }
@@ -174,7 +163,6 @@
 .special__visual {
   padding-top: 27px;
   padding-bottom: 25px;
-
   img {
     display: block;
     width: 260px;
@@ -186,7 +174,6 @@
     position: absolute;
     top: 125px;
     right: 50px;
-
     img {
       display: block;
       width: 334px;
@@ -200,7 +187,6 @@
     top: 44px;
     right: 0;
     z-index: 1;
-
     img {
       display: block;
       width: 525px;
@@ -209,7 +195,6 @@
     }
   }
 }
-
 .special__price {
   display: block;
   padding-bottom: 25px;
