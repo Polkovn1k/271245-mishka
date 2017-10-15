@@ -1,6 +1,5 @@
 .about-us__container {
-  width: 320px;
-  margin: 0 auto;
+  @include mobal-container();
   padding: 0;
   padding-top: 27px;
   padding-right: 30px;
@@ -22,11 +21,9 @@
 }
 
 .about-us__title {
-  margin: 0;
-  padding: 0;
+  @include field-reset();
   padding-bottom: 26px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 30px;
   font-size: 25px;
   color: $main-color;
@@ -45,38 +42,30 @@
 }
 
 .about-us__list {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include ul-reset();
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    display: flex;
-  flex-direction: row;
+    @include flex-row();
     flex-wrap: wrap;
   }
 
   @media (min-width: $min-desktop) {
-    display: flex;
-  flex-direction: row;
+    @include flex-row();
     flex-wrap: wrap;
   }
 }
 
 .about-us__item {
-  display: flex;
-  flex-direction: row;
+  @include flex-row();
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  @include field-reset();
   padding-top: 60px;
   padding-bottom: 23px;
-  font-family: "Open Sans";
-  font-weight: 700;
+  @include font-bold();
   line-height: 20px;
   font-size: 17px;
   color: $main-color;
