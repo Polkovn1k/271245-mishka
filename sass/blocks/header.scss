@@ -17,6 +17,7 @@
     box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1);
   }
 }
+
 .header__logo {
   padding-top: 22px;
   padding-bottom: 22px;
@@ -39,10 +40,12 @@
     padding: 0;
   }
 }
+
 .header__logo-link {
   display: block;
   width: 86px;
   @include field-reset();
+
   img {
     display: block;
     @include field-reset();
@@ -52,6 +55,7 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 113px;
+
     img {
       width: 113px;
       height: 46px;
@@ -60,12 +64,14 @@
 
   @media (min-width: $min-desktop) {
     width: 149px;
+
     img {
       width: 149px;
       height: 72px;
     }
   }
 }
+
 .header__nav {
   position: relative;
   display: block;
@@ -86,12 +92,14 @@
     box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1);
   }
 }
+
 .header__nav--catalog-bg {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     background: $footer-bg;
   }
 }
+
 .header__nav-list {
   @include flex-column();
   @include ul-reset();
@@ -117,17 +125,22 @@
     margin: 0;
   }
 }
+
 .header__nav-list--show {
   display: flex;
 }
+
 .header__nav-list--nojs {
   display: flex;
 }
+
 .header__nav-list--nojs + .header__nav-toggle {
   display: none;
 }
+
 .header__nav-item {
   @include field-reset();
+
   a {
     @include flex-column();
     align-items: flex-start;
@@ -144,6 +157,7 @@
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+
     a{
       display: inline;
       width: auto;
@@ -155,6 +169,7 @@
   }
 
   @media (min-width: $min-desktop) {
+
     a{
       display: block;
       width: auto;
@@ -165,12 +180,14 @@
     }
   }
 }
+
 .header__nav-item--catalog {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 167px;
     padding-top: 18px;
     letter-spacing: 0.1px;
+
     a{
       @include font-bold();
       line-height: 24px;
@@ -182,6 +199,7 @@
   @media (min-width: $min-desktop) {
     width: 184px;
     padding-top: 0;
+
     a{
       padding-top: 31px;
       padding-left: 0;
@@ -192,12 +210,14 @@
     }
   }
 }
+
 .header__nav-item--form {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 154px;
     padding-top: 18px;
     letter-spacing: 0.1px;
+
     a{
       @include font-bold();
       line-height: 24px;
@@ -209,6 +229,7 @@
   @media (min-width: $min-desktop) {
     width: 210px;
     padding-top: 0;
+
     a{
       padding-top: 31px;
       padding-left: 35px;
@@ -219,10 +240,13 @@
     }
   }
 }
+
 .header__nav-item--search {
+
   a {
     position: relative;
   }
+
   svg {
     position: absolute;
     top: 31px;
@@ -230,6 +254,7 @@
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+
     a{
       display: block;
       width: 83px;
@@ -239,6 +264,7 @@
       box-shadow: -1px 0 rgba(68, 68, 68, 0.1),
       inset -1px 0 rgba(68, 68, 68, 0.1);
     }
+
     svg {
       position: absolute;
       top: 36px;
@@ -248,12 +274,14 @@
 
   @media (min-width: $min-desktop) {
     margin-left: auto;
+
     a{
       width: 84px;
       font-size: 0;
       box-shadow: inset 1px 0 rgba(68, 68, 68, 0.1),
       inset -1px 0 rgba(68, 68, 68, 0.1);
     }
+
     svg {
       position: absolute;
       top: 36px;
@@ -261,12 +289,15 @@
     }
   }
 }
+
 .header__nav-item--cart {
+
   a {
     position: relative;
     box-shadow: inset 0 1px 0 0 $controls-bg,
     inset 0 -1px 0 0 $controls-bg;
   }
+
   svg {
     position: absolute;
     top: 31px;
@@ -274,6 +305,7 @@
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+
     a{
       position: relative;
       display: block;
@@ -288,6 +320,7 @@
       color: $main-color;
       box-shadow: none;
     }
+
     svg {
       position: absolute;
       top: 34px;
@@ -296,6 +329,7 @@
   }
 
   @media (min-width: $min-desktop) {
+
     a{
       width: 266px;
       padding-top: 31px;
@@ -306,6 +340,7 @@
       text-align: right;
       box-shadow: none;
     }
+
     svg {
       position: absolute;
       top: 34px;
@@ -313,6 +348,7 @@
     }
   }
 }
+
 .header__nav-toggle {
   position: absolute;
   z-index: 10;
@@ -331,6 +367,7 @@
     display: none;
   }
 }
+
 .header__toggle-open {
   display: block;
   width: 100%;
@@ -346,9 +383,11 @@
     display: none;
   }
 }
+
 .header__toggle-open--hide {
   display: none;
 }
+
 .header__toggle-close {
   display: none;
   width: 100%;
@@ -364,29 +403,37 @@
     display: none;
   }
 }
+
 .header__toggle-close--show {
   display: block;
 }
+
 .header__logo-link[href]:hover {
   opacity: 0.6;
 }
+
 .header__logo-link[href]:active {
   opacity: 0.3;
 }
+
 .header__nav-item a[href]:hover {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .header__nav-item a[href]:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
 a .header__icon-search,
 a .header__icon-cart {
   fill: rgba(0, 0, 0, 0.2);
 }
+
 a:hover .header__icon-search,
 a:hover .header__icon-cart {
   fill: $green-color;
 }
+
 a:active .header__icon-search,
 a:active .header__icon-cart {
   fill: rgba(99, 209, 187, 0.3);

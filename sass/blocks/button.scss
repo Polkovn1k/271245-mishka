@@ -13,6 +13,7 @@
   outline: none;
   cursor: pointer;
 }
+
 .button--special {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -23,6 +24,7 @@
     width: 293px;
   }
 }
+
 .button--contacts {
   order: 5;
   width: 260px;
@@ -42,6 +44,7 @@
     letter-spacing: 0.1px;
   }
 }
+
 .button--comments {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -58,6 +61,7 @@
     margin-top: 9px;
   }
 }
+
 .button--prepare {
   width: 192px;
   margin: 0 auto;
@@ -76,6 +80,7 @@
     font-size: 17px;
   }
 }
+
 .button--form {
   width: 260px;
   margin: 0 auto;
@@ -92,6 +97,7 @@
     margin: 0;
   }
 }
+
 .button--modal {
   width: 260px;
   margin: 0 auto;
@@ -109,11 +115,13 @@
     width: 350px;
   }
 }
+
 .button:hover {
   background: $grey-color;
   border-color: $grey-color;
   color: $add-color;
 }
+
 .button:active {
   background: $grey-color;
   border-color: $grey-color;
