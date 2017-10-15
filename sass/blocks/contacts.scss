@@ -109,7 +109,7 @@
 
 .contacts__text {
   order: 2;
-  @include flex-row()
+  @include flex-row();
   @include field-reset();
   padding-right: 30px;
   padding-bottom: 29px;
