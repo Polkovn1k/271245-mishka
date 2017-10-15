@@ -146,11 +146,35 @@
   display: flex;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    display: flex;
+
   }
 
   @media (min-width: $min-desktop) {
-    display: flex;
+
+  }
+}
+/* -------------------------------------------------------------- */
+.header__nav-list--nojs {
+  display: flex;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+
+  }
+
+  @media (min-width: $min-desktop) {
+
+  }
+}
+/* -------------------------------------------------------------- */
+.header__nav-list--nojs + .header__nav-toggle {
+  display: none;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+
+  }
+
+  @media (min-width: $min-desktop) {
+
   }
 }
 /* -------------------------------------------------------------- */
