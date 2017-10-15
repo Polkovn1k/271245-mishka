@@ -4,7 +4,6 @@
   padding-top: 27px;
   padding-right: 30px;
   padding-left: 30px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 768px;
     padding-top: 50px;
@@ -12,13 +11,13 @@
     padding-bottom: 48px;
     padding-left: 50px;
   }
-
   @media (min-width: $min-desktop) {
     width: 1050px;
     padding-top: 59px;
     padding-left: 175px;
   }
 }
+
 .about-us__title {
   @include field-reset();
   padding-bottom: 26px;
@@ -26,34 +25,32 @@
   line-height: 30px;
   font-size: 25px;
   color: $main-color;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     line-height: 50px;
     font-size: 43px;
     letter-spacing: -0.6px;
   }
-
   @media (min-width: $min-desktop) {
     line-height: 57px;
     font-size: 53px;
     letter-spacing: -0.8px;
   }
 }
+
 .about-us__list {
   @include flex-column();
   width: 100%;
   @include ul-reset();
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     @include flex-row();
     flex-wrap: wrap;
   }
-
   @media (min-width: $min-desktop) {
     @include flex-row();
     flex-wrap: wrap;
   }
 }
+
 .about-us__item {
   @include flex-row();
   justify-content: flex-start;
@@ -67,7 +64,6 @@
   font-size: 17px;
   color: $main-color;
   letter-spacing: 0.1px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 334px;
     padding-top: 76px;
@@ -75,7 +71,6 @@
     line-height: 22px;
     font-size: 20px;
   }
-
   @media (min-width: $min-desktop) {
     width: 351px;
     padding-top: 76px;
@@ -84,96 +79,90 @@
     font-size: 20px;
   }
 }
+
 .about-us__item--eco {
   background: transparent url("../img/icon-feature-flower.svg") left 9px top 6px no-repeat;
   background-size: 33px 38px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 1;
     background-position: left 9px top 22px;
     background-size: 33px 38px;
   }
-
   @media (min-width: $min-desktop) {
     order: 1;
     background-position: left 9px top 22px;
     background-size: 33px 38px;
   }
 }
+
 .about-us__item--style {
   background: transparent url("../img/icon-feature-money.svg") left 1px top 7px no-repeat;
   background-size: 47px 27px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 3;
     background-position: left 1px top 23px;
     background-size: 47px 27px;
   }
-
   @media (min-width: $min-desktop) {
     order: 3;
     background-position: left 1px top 23px;
     background-size: 47px 27px;
   }
 }
+
 .about-us__item--like {
   background: transparent url("../img/icon-feature-heart.svg") left 8px top 11px no-repeat;
   background-size: 34px 27px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 5;
     background-position: left 8px top 27px;
     background-size: 34px 27px;
   }
-
   @media (min-width: $min-desktop) {
     order: 5;
     background-position: left 8px top 27px;
     background-size: 34px 27px;
   }
 }
+
 .about-us__item--love {
   background: transparent url("../img/icon-feature-ball.svg") left 4px top 9px no-repeat;
   background-size: 35px 34px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 2;
     background-position: left 3px top 25px;
     background-size: 35px 34px;
   }
-
   @media (min-width: $min-desktop) {
     order: 2;
     background-position: left 3px top 25px;
     background-size: 35px 34px;
   }
 }
+
 .about-us__item--our {
   background: transparent url("../img/icon-feature-rocket.svg") left 0 top 10px no-repeat;
   background-size: 55px 23px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 4;
     background-position: left 0 top 25px;
     background-size: 55px 23px;
   }
-
   @media (min-width: $min-desktop) {
     order: 4;
     background-position: left 0 top 25px;
     background-size: 55px 23px;
   }
 }
+
 .about-us__item--present {
   background: transparent url("../img/icon-feature-gift.svg") left 4px top 8px no-repeat;
   background-size: 33px 32px;
-
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 6;
     background-position: left 3px top 24px;
     background-size: 33px 32px;
   }
-
   @media (min-width: $min-desktop) {
     order: 6;
     background-position: left 3px top 24px;
