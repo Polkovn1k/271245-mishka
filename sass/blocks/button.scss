@@ -12,16 +12,8 @@
   background: transparent;
   outline: none;
   cursor: pointer;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-  }
-
-  @media (min-width: $min-desktop) {
-
-  }
 }
-/* -------------------------------------------------------------- */
+
 .button--special {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -32,7 +24,7 @@
     width: 293px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .button--contacts {
   order: 5;
   width: 260px;
@@ -41,18 +33,18 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 230px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   @media (min-width: $min-desktop) {
     width: 230px;
-    margin: 0px;
+    margin: 0;
     margin-top: -91px;
     margin-left: 275px;
     letter-spacing: 0.1px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .button--comments {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -69,10 +61,10 @@
     margin-top: 9px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .button--prepare {
   width: 192px;
-  margin: 0px auto;
+  margin: 0 auto;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 4;
@@ -88,27 +80,27 @@
     font-size: 17px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .button--form {
   width: 260px;
-  margin: 0px auto;
+  margin: 0 auto;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     order: 7;
     width: 230px;
-    margin: 0px;
+    margin: 0;
   }
 
   @media (min-width: $min-desktop) {
     order: 7;
     width: 230px;
-    margin: 0px;
+    margin: 0;
   }
 }
-/* -------------------------------------------------------------- */
+
 .button--modal {
   width: 260px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 17px;
   padding-bottom: 15px;
   color: $add-color;
@@ -123,7 +115,7 @@
     width: 350px;
   }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 .button:hover {
   background: $grey-color;
   border-color: $grey-color;

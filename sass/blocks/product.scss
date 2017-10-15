@@ -7,54 +7,44 @@
     @include flex-row();
     flex-wrap: nowrap;
     width: 668px;
-    margin: 0px auto;
-    padding-top: 0px;
+    margin: 0 auto;
+    padding-top: 0;
     padding-bottom: 54px;
   }
 
   @media (min-width: $min-desktop) {
     width: 315px;
-    margin: 0px;
+    margin: 0;
     padding-top: 127px;
   }
 }
-/* -------------------------------------------------------------- */
-.product--first {
 
+.product--first {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-top: 83px;
   }
-
-  @media (min-width: $min-desktop) {
-
-  }
 }
-/* -------------------------------------------------------------- */
-.product--last {
 
+.product--last {
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-bottom: 52px;
   }
-
-  @media (min-width: $min-desktop) {
-
-  }
 }
-/* -------------------------------------------------------------- */
+
 .product__container {
   order: 2;
   @include flex-column();
   flex-wrap: nowrap;
   justify-content: flex-start;
   width: 260px;
-  margin: 0px auto;
-  padding: 0px;
-  box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1),
-              inset 0px 1px rgba(68, 68, 68, 0.1),
-              inset -1px 0px rgba(68, 68, 68, 0.1),
-              inset 1px 0px rgba(68, 68, 68, 0.1);
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1),
+  inset 0 1px rgba(68, 68, 68, 0.1),
+  inset -1px 0 rgba(68, 68, 68, 0.1),
+  inset 1px 0 rgba(68, 68, 68, 0.1);
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 334px;
@@ -67,7 +57,7 @@
     @include field-reset();
   }
 }
-/* -------------------------------------------------------------- */
+
 .product__title {
   order: 2;
   @include field-reset();
@@ -106,12 +96,12 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .product__visual {
   order: 1;
   width: 260px;
-  margin: 0px auto;
-  box-shadow: 0px 1px rgba(68, 68, 68, 0.1);
+  margin: 0 auto;
+  box-shadow: 0 1px rgba(68, 68, 68, 0.1);
 
   img {
     display: block;
@@ -140,7 +130,7 @@
     }
   }
 }
-/* -------------------------------------------------------------- */
+
 .product__property {
   order: 3;
   padding-right: 28px;
@@ -157,13 +147,13 @@
   }
 
   @media (min-width: $min-desktop) {
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 26px;
     line-height: 30px;
     font-size: 15px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .product__buy {
   order: 4;
   position: relative;
@@ -181,12 +171,12 @@
     display: block;
     width: 25px;
     min-height: 25px;
-    font-size: 0px;
+    font-size: 0;
   }
 
   svg {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 27px;
   }
 
@@ -194,13 +184,9 @@
     margin-top: auto;
   }
 
-  a {
-
-  }
-
   svg {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 31px;
   }
 
@@ -208,21 +194,17 @@
     min-height: 74px;
     margin-top: auto;
     padding-top: 23px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 21px;
 
-    a {
-
-    }
-
     svg {
-    position: absolute;
-    top: 24px;
-    right: 32px;
-  }
+      position: absolute;
+      top: 24px;
+      right: 32px;
+    }
   }
 }
-/* -------------------------------------------------------------- */
+
 .product__buy::before {
   content: "";
   position: absolute;
@@ -233,10 +215,6 @@
   height: 1px;
   background: $controls-bg;
 
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-
-  }
-
   @media (min-width: $min-desktop) {
     top: -0px;
     right: 28px;
@@ -244,7 +222,7 @@
     height: 1px;
   }
 }
-/* -------------------------------------------------------------- */
+
 .product__price {
   display: block;
   @include font-bold();
@@ -264,13 +242,13 @@
     font-size: 17px;
   }
 }
-/* HOVER/ACTIVE/FOCUS=============================================== */
+
 .product:hover .product__container {
-  box-shadow: inset 0px -1px rgba(68, 68, 68, 0.1),
-              inset 0px 1px rgba(68, 68, 68, 0.1),
-              inset -1px 0px rgba(68, 68, 68, 0.1),
-              inset 1px 0px rgba(68, 68, 68, 0.1),
-              0px 4px 20px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1),
+  inset 0 1px rgba(68, 68, 68, 0.1),
+  inset -1px 0 rgba(68, 68, 68, 0.1),
+  inset 1px 0 rgba(68, 68, 68, 0.1),
+  0 4px 20px 2px rgba(0, 0, 0, 0.1);
 }
 
 a .product__icon-cart {
