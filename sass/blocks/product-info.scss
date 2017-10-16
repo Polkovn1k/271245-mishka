@@ -1,5 +1,6 @@
 .product-info {
   display: none;
+  font-family: "Open Sans";
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     position: absolute;
@@ -42,7 +43,7 @@
     line-height: 24px;
     font-size: 15px;
     color: $grey-color;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.2px;
   }
 }
 

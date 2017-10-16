@@ -4,7 +4,7 @@
   padding-right: 30px;
   padding-bottom: 42px;
   padding-left: 30px;
-  background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+  background: transparent url("../img/bg-zigzag-line.svg") bottom 0px right 8px repeat-x;
   background-size: 320px 7px;
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -18,7 +18,7 @@
     padding-right: 50px;
     padding-bottom: 69px;
     padding-left: 50px;
-    background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background: transparent url("../img/bg-zigzag-line.svg") bottom 0px right 18px repeat-x;
     background-size: 768px 17px;
   }
 
@@ -33,7 +33,7 @@
     padding-right: 100px;
     padding-bottom: 96px;
     padding-left: 174px;
-    background: transparent url("../img/bg-zigzag-line.svg") bottom repeat-x;
+    background: transparent url("../img/bg-zigzag-line.svg") bottom 0px right 26px repeat-x;
     background-size: 1050px 23px;
   }
 }

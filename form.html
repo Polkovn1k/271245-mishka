@@ -41,7 +41,7 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <a class="header__logo-link" href="index.html">
+        <a class="header__logo-link" href="index.html" tabindex="1">
           <picture>
             <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -51,22 +51,22 @@
       </div>
       <nav class="header__nav header__nav--catalog-bg">
         <ul class="header__nav-list header__nav-list--nojs">
-          <li class="header__nav-item header__nav-item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="header__nav-item header__nav-item--catalog"><a href="catalog.html" tabindex="1">Каталог товаров</a></li>
           <li class="header__nav-item header__nav-item--form"><a>Вязание на заказ</a></li>
-          <li class="header__nav-item header__nav-item--search"><a href="#">Поиск по сайту<svg width="17.6" height="17.6" class="header__icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg></a></li>
-          <li class="header__nav-item header__nav-item--cart"><a href="#">Корзина: пока пуста<svg width="20.294" height="18.849" class="header__icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg></a></li>
+          <li class="header__nav-item header__nav-item--search"><a href="search.html" tabindex="1">Поиск по сайту<svg width="17.6" height="17.6" class="header__icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg></a></li>
+          <li class="header__nav-item header__nav-item--cart"><a href="cart.html" tabindex="1">Корзина: пока пуста<svg width="20.294" height="18.849" class="header__icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg></a></li>
         </ul>
         <div class="header__nav-toggle">
-          <a class="header__toggle-open">Открыть меню</a>
-          <a class="header__toggle-close">Закрыть меню</a>
+          <a class="header__toggle-open" tabindex="1">Открыть меню</a>
+          <a class="header__toggle-close" tabindex="1">Закрыть меню</a>
         </div>
       </nav>
     </div>
   </header>
   <main class="main">
     <div class="product-info">
-      <a href="#" class="product-info__new">Новые поступления</a>
-      <a href="#" class="product-info__sale">Распродажа</a>
+      <a href="new.html" class="product-info__new" tabindex="1">Новые поступления</a>
+      <a href="sale.html" class="product-info__sale" tabindex="1">Распродажа</a>
       <span class="product-info__delivery">Бесплатная доставка по России</span>
     </div>
     <h1 class="page-title">Вязание на заказ</h1>
@@ -78,10 +78,10 @@
         <fieldset class="form__type">
           <legend class="form__type-title">ТИП</legend>
           <div class="form__type-container">
-            <input type="radio" name="type" id="form__type-1" checked="">
+            <input type="radio" name="type" id="form__type-1" checked>
             <input type="radio" name="type" id="form__type-2">
-            <label for="form__type-1" class="form__type-label form__type-label--1">Аксессуар для интерьера</label>
-            <label for="form__type-2" class="form__type-label form__type-label--2">Детская игрушка</label>
+            <label for="form__type-1" class="form__type-label form__type-label--1" tabindex="1">Аксессуар для интерьера</label>
+            <label for="form__type-2" class="form__type-label form__type-label--2" tabindex="1">Детская игрушка</label>
           </div>
         </fieldset>
       </div>
@@ -89,18 +89,18 @@
         <fieldset class="form__color">
           <legend class="form__color-title">ЦВЕТ</legend>
           <div class="form__color-container">
-            <input type="checkbox" name="white" id="form__color-1" checked="">
-            <input type="checkbox" name="grey" id="form__color-2" checked="">
+            <input type="checkbox" name="white" id="form__color-1" checked>
+            <input type="checkbox" name="grey" id="form__color-2" checked>
             <input type="checkbox" name="tiffany" id="form__color-3">
             <input type="checkbox" name="black" id="form__color-4">
             <input type="checkbox" name="pink" id="form__color-5">
             <input type="checkbox" name="orange" id="form__color-6">
-            <label for="form__color-1" class="form__color-label form__color-label--1">Белый</label>
-            <label for="form__color-2" class="form__color-label form__color-label--2">Серый</label>
-            <label for="form__color-3" class="form__color-label form__color-label--3">&#171;Тиффани&#187;</label>
-            <label for="form__color-4" class="form__color-label form__color-label--4">Черный</label>
-            <label for="form__color-5" class="form__color-label form__color-label--5">Розовый</label>
-            <label for="form__color-6" class="form__color-label form__color-label--6">Оранжевый</label>
+            <label for="form__color-1" class="form__color-label form__color-label--1" tabindex="1">Белый</label>
+            <label for="form__color-2" class="form__color-label form__color-label--2" tabindex="1">Серый</label>
+            <label for="form__color-3" class="form__color-label form__color-label--3" tabindex="1">&#171;Тиффани&#187;</label>
+            <label for="form__color-4" class="form__color-label form__color-label--4" tabindex="1">Черный</label>
+            <label for="form__color-5" class="form__color-label form__color-label--5" tabindex="1">Розовый</label>
+            <label for="form__color-6" class="form__color-label form__color-label--6" tabindex="1">Оранжевый</label>
           </div>
         </fieldset>
       </div>
@@ -108,9 +108,9 @@
         <fieldset class="form__name">
           <legend class="form__name-title">ФИО</legend>
           <div class="form__name-container">
-            <label class="form__name-label"><span>Имя:</span><input type="text" placeholder="Введите ваше имя*"></label>
-            <label class="form__name-label"><span>Фамилия:</span><input type="text" placeholder="Укажите фамилию*"></label>
-            <label class="form__name-label"><span>Отчество:</span><input type="text" placeholder="Отчество, если желаете"></label>
+            <label class="form__name-label"><span>Имя:</span><input type="text" placeholder="Введите ваше имя*" tabindex="1"></label>
+            <label class="form__name-label"><span>Фамилия:</span><input type="text" placeholder="Укажите фамилию*" tabindex="1"></label>
+            <label class="form__name-label"><span>Отчество:</span><input type="text" placeholder="Отчество, если желаете" tabindex="1"></label>
           </div>
         </fieldset>
       </div>
@@ -118,7 +118,7 @@
         <fieldset class="form__phone">
           <legend class="form__phone-title">ТЕЛ</legend>
           <div class="form__phone-container">
-            <label class="form__phone-label"><input type="tel" placeholder="+7 ХХХ ХХ ХХ*"></label>
+            <label class="form__phone-label"><input type="tel" placeholder="+7 ХХХ ХХ ХХ*" tabindex="1"></label>
           </div>
         </fieldset>
       </div>
@@ -126,7 +126,7 @@
         <fieldset class="form__email">
           <legend class="form__email-title">E-MAIL</legend>
           <div class="form__email-container">
-            <label class="form__email-label"><input type="email" placeholder="Ваш Email*"></label>
+            <label class="form__email-label"><input type="email" placeholder="Ваш Email*" tabindex="1"></label>
           </div>
         </fieldset>
       </div>
@@ -134,28 +134,28 @@
         <fieldset class="form__addition">
           <legend class="form__addition-title">ДОП</legend>
           <div class="form__addition-container">
-            <textarea name="emotion" placeholder="Опишите все ваши пожелания к заказу" class="form__addition-label" required=""></textarea>
+            <textarea name="emotion" placeholder="Опишите все ваши пожелания к заказу" class="form__addition-label" tabindex="1" required></textarea>
           </div>
         </fieldset>
       </div>
       <span class="form__notice"><sup>*</sup>Поля обязательны для заполнения</span>
-      <button type="submit" class="button button--form">Отправить заказ</button>
+      <button type="submit" class="button button--form" tabindex="1">Отправить заказ</button>
     </form>
   </main>
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__logo">
-        <a class="footer__logo-link" href="index.html">
+        <a class="footer__logo-link" href="index.html" tabindex="1">
           <svg width="101.615" height="34.056" class="footer__logo-footer"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use></svg>
         </a>
       </div>
       <ul class="social">
-        <li class="social__item social__item--insta"><a href="#">Мы в Инстаграме<svg width="21.769" height="21.334" class="social__icon-insta"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use></svg></a></li>
-        <li class="social__item social__item--facebook"><a href="#">Мы в Фэйсбуке<svg width="14.962" height="27.718" class="social__icon-fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg></a></li>
-        <li class="social__item social__item--twitter"><a href="#">Мы в Твиттере<svg width="23.494" height="20.168" class="social__icon-twitter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg></a></li>
+        <li class="social__item social__item--insta"><a href="instagram.com" tabindex="1">Мы в Инстаграме<svg width="21.769" height="21.334" class="social__icon-insta"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use></svg></a></li>
+        <li class="social__item social__item--facebook"><a href="facebook.com" tabindex="1">Мы в Фэйсбуке<svg width="14.962" height="27.718" class="social__icon-fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg></a></li>
+        <li class="social__item social__item--twitter"><a href="twitter.com" tabindex="1">Мы в Твиттере<svg width="23.494" height="20.168" class="social__icon-twitter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg></a></li>
       </ul>
       <div class="footer__developers">
-        <span>Разработано</span><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg width="26.943" height="34.09" class="footer__logo-htmlacademy"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg></a>
+        <span>Разработано</span><a href="https://htmlacademy.ru/intensive/adaptive" tabindex="1">HTML Academy<svg width="26.943" height="34.09" class="footer__logo-htmlacademy"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg></a>
       </div>
     </div>
   </footer>

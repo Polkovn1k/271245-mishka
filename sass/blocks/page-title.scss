@@ -16,7 +16,7 @@
     @include font-bold();
     line-height: 50px;
     font-size: 43px;
-    background: $footer-bg url("../img/bg-zigzag-fill.svg") left 0 bottom -16px repeat-x;
+    background: $footer-bg url("../img/bg-zigzag-fill.svg") left -2px bottom -16px repeat-x;
     background-size: 768px 28px;
   }
 
@@ -28,7 +28,7 @@
     @include font-bold();
     line-height: 57px;
     font-size: 53px;
-    background: $footer-bg url("../img/bg-zigzag-fill.svg") left 0 bottom -16px repeat-x;
+    background: $footer-bg url("../img/bg-zigzag-fill.svg") left 31px bottom -16px repeat-x;
     background-size: 1150px 34px;
   }
 }
