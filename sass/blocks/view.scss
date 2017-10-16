@@ -1,3 +1,15 @@
+.view {
+  background: $table-bg;
+
+  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    background: transparent;
+  }
+
+  @media (min-width: $min-desktop) {
+    background: transparent;
+  }
+}
+
 .view__container {
   @include mobal-container();
   padding: 0;
@@ -53,8 +65,8 @@
     bottom: -17px;
     width: 100%;
     min-height: 34px;
-    background: transparent url("../img/bg-zigzag-fill.svg") 0 0 repeat-x;
-    background-size: 1150px 34px;
+    background: transparent url("../img/zigzag-fill.png") 15px 0 repeat-x;
+    background-size: 1250px 34px;
   }
 }
 
@@ -62,6 +74,7 @@
   @include field-reset();
   padding-top: 18px;
   padding-bottom: 122px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 27px;
@@ -101,6 +114,7 @@
 
 .view__list {
   width: 100%;
+
   @include ul-reset();
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -119,25 +133,46 @@
 }
 
 .view__item {
+  position: relative;
   width: 100%;
+
   @include field-reset();
 
   a {
+    position: relative;
+
     @include flex-row();
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+
     @include field-reset();
     padding-top: 23px;
     padding-right: 36px;
     padding-bottom: 19px;
     padding-left: 29px;
+
     @include font-bold()
     line-height: 24px;
     font-size: 19px;
     color: $add-color;
     background: $green-color;
+  }
 
+  a:hover {
+    padding-top: 18px;
+    padding-bottom: 24px;
+  }
+
+  a:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    left: 0px;
+    height: 5px;
+    background: $green-color;
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -149,6 +184,21 @@
       padding-left: 35px;
       line-height: 30px;
       font-size: 20px;
+    }
+
+    a:hover {
+      padding-top: 23px;
+    }
+
+    a:hover::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0px;
+      left: 0px;
+      height: 5px;
+      background: $green-color;
     }
   }
 
@@ -163,6 +213,21 @@
       line-height: 30px;
       font-size: 20px;
     }
+
+    a:hover {
+      padding-top: 23px;
+    }
+
+    a:hover::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: 0px;
+      left: 0px;
+      height: 5px;
+      background: $green-color;
+    }
   }
 }
 
@@ -170,6 +235,10 @@
 
   a {
     padding-right: 28px;
+    background: $green-color--dark;
+  }
+
+  a:hover::before {
     background: $green-color--dark;
   }
 
@@ -201,19 +270,4 @@ a:hover .view__icon-toy {
 a:active .view__icon-interior,
 a:active .view__icon-toy {
   fill: rgba(20, 144, 128, 0.3);
-}
-
-.view__item a:hover {
-  padding-top: 18px;
-  min-height: 106px;
-
-  @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
-    min-height: 124px;
-    padding-top: 23px;
-  }
-
-  @media (min-width: $min-desktop) {
-    min-height: 124px;
-    padding-top: 23px;
-  }
 }

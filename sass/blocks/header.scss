@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $min-desktop) {
-    position: relative;
+    @include flex-column();
     width: 100%;
     padding: 0;
     box-shadow: inset 0 -1px rgba(68, 68, 68, 0.1);
@@ -33,10 +33,10 @@
   }
 
   @media (min-width: $min-desktop) {
-    position: absolute;
-    top: 9px;
-    left: 50%;
-    margin-left: -75px;
+    align-self: center;
+    z-index: 10;
+    margin-top: 9px;
+    margin-bottom: -81px;
     padding: 0;
   }
 }
@@ -44,10 +44,12 @@
 .header__logo-link {
   display: block;
   width: 86px;
+
   @include field-reset();
 
   img {
     display: block;
+
     @include field-reset();
     width: 86px;
     height: 35px;
@@ -102,6 +104,7 @@
 
 .header__nav-list {
   @include flex-column();
+
   @include ul-reset();
   flex-wrap: nowrap;
   display: none;
@@ -121,6 +124,7 @@
     @include flex-row();
     flex-wrap: nowrap;
     justify-content: space-between;
+    min-height: 88px;
     padding: 0;
     margin: 0;
   }
@@ -148,6 +152,7 @@
     width: 100%;
     min-height: 79px;
     padding-left: 75px;
+
     @include font-bold();
     line-height: 24px;
     font-size: 17px;
@@ -169,12 +174,13 @@
   }
 
   @media (min-width: $min-desktop) {
+    display: flex;
+    flex-direction: row;
 
     a{
       display: block;
       width: auto;
       padding-left: 0;
-      min-height: 88px;
       text-align: left;
       box-shadow: none;
     }
@@ -203,6 +209,7 @@
     a{
       padding-top: 31px;
       padding-left: 0;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -233,6 +240,7 @@
     a{
       padding-top: 31px;
       padding-left: 35px;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -314,6 +322,7 @@
       margin-top: -88px;
       padding-top: 31px;
       padding-left: 82px;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;
@@ -333,6 +342,7 @@
     a{
       width: 266px;
       padding-top: 31px;
+
       @include font-bold();
       line-height: 24px;
       font-size: 17px;

@@ -1,5 +1,6 @@
 .social {
   position: relative;
+
   @include flex-row();
   flex-wrap: nowrap;
   width: 150px;
@@ -46,6 +47,7 @@
 .social__item {
   min-height: 31px;
   min-width: 32px;
+
   @include field-reset();
 
   a {

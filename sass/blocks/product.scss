@@ -35,6 +35,7 @@
 
 .product__container {
   order: 2;
+
   @include flex-column();
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -48,18 +49,21 @@
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 334px;
+
     @include field-reset();
   }
 
   @media (min-width: $min-desktop) {
     width: 315px;
     min-height: 197px;
+
     @include field-reset();
   }
 }
 
 .product__title {
   order: 2;
+
   @include field-reset();
   padding-top: 27px;
   padding-right: 28px;
@@ -68,7 +72,9 @@
 
   a {
     display: block;
+
     @include field-reset();
+
     @include font-bold();
     line-height: 24px;
     font-size: 17px;
@@ -105,11 +111,13 @@
 
   img {
     display: block;
+
     @include field-reset();
   }
 
   @media only screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
     width: 334px;
+
     @include field-reset();
 
     img {
@@ -121,6 +129,7 @@
 
   @media (min-width: $min-desktop) {
     width: 315px;
+
     @include field-reset();
 
     img {
@@ -136,6 +145,7 @@
   padding-right: 28px;
   padding-bottom: 41px;
   padding-left: 28px;
+
   @include font-regular();
   line-height: 30px;
   font-size: 13px;
@@ -157,12 +167,14 @@
 .product__buy {
   order: 4;
   position: relative;
+
   @include flex-row();
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-right: 28px;
   padding-bottom: 27px;
   padding-left: 28px;
+
   @include font-bold();
   line-height: 24px;
   font-size: 15px;
@@ -225,6 +237,7 @@
 
 .product__price {
   display: block;
+
   @include font-bold();
   line-height: 24px;
   font-size: 15px;

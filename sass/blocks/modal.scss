@@ -96,6 +96,7 @@
   padding-right: 80px;
   padding-bottom: 11px;
   padding-left: 80px;
+
   @include font-bold();
   line-height: 30px;
   font-size: 25px;
@@ -131,6 +132,7 @@
 
 .modal__size-title {
   padding-bottom: 24px;
+
   @include font-regular();
   line-height: 30px;
   font-size: 15px;
@@ -155,6 +157,7 @@
   min-height: 52px;
   margin-right: 7px;
   padding-top: 17px;
+
   @include font-bold();
   line-height: 17px;
   font-size: 17px;
